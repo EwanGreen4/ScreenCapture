@@ -1,0 +1,50 @@
+﻿<UserControl
+    x:Class="ScreenCapture.WarningCard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="Card"
+    d:DesignHeight="100"
+    d:DesignWidth="600"
+    Loaded="Card_Loaded"
+    SizeChanged="Card_SizeChanged"
+    Visibility="Collapsed"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <Storyboard x:Name="EnterStoryboard">
+            <PopInThemeAnimation Storyboard.TargetName="Card" />
+        </Storyboard>
+        <Storyboard x:Name="ExitStoryboard">
+            <PopOutThemeAnimation Storyboard.TargetName="Card" />
+        </Storyboard>
+        <Storyboard x:Name="ResizeStoryboard">
+            <DoubleAnimation
+                Storyboard.TargetName="Card"
+                Storyboard.TargetProperty="Height"
+                From="{x:Bind OldHeight, Mode=OneWay}"
+                To="{x:Bind NewHeight, Mode=OneWay}"
+                Duration="0:0:3" />
+        </Storyboard>
+    </UserControl.Resources>
+    <StackPanel
+        Padding="16"
+        Background="{ThemeResource SystemFillColorCautionBackgroundBrush}"
+        BorderBrush="{ThemeResource CardStrokeColorDefault}"
+        BorderThickness="1"
+        CornerRadius="4"
+        Orientation="Horizontal"
+        Spacing="14">
+        <Grid>
+            <Grid.Resources>
+                <Style TargetType="FontIcon">
+                    <Setter Property="FontSize" Value="16" />
+                    <Setter Property="FontFamily" Value="Segoe Fluent Icons" />
+                </Style>
+            </Grid.Resources>
+            <FontIcon Foreground="{ThemeResource SystemFillColorCaution}" Glyph="&#xf136;" />
+            <FontIcon Foreground="{ThemeResource SystemFillColorCautionBackground}" Glyph="&#xf13c;" />
+        </Grid>
+        <StackPanel x:Name="ContentPanel" Orientation="Vertical" />
+    </StackPanel>
+</UserControl>
