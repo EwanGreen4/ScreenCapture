@@ -1,17 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "Ud4ZrRlyOpvKwgxEJX9/aDCRHCQDuielBb/5W8EteuJZOKLIow2lOeIzDTWo9qkmhd23QjXB0gkFhOYyvxvC7g==",
+  "dgSpecHash": "pKNGvo58q6N9M5whayChWUtXyS2C4j6Nm4Yq/sJaDTDK+wygYIUD9tNnQb1/Pby8lf4TfItg71X8vAfk97PC4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lezlo\\source\\repos\\ScreenCapture\\ScreenCapture\\ScreenCapture.csproj",
+  "projectFilePath": "C:\\Users\\lezlo\\Source\\Repos\\ScreenCapture\\ScreenCapture\\ScreenCapture.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\lezlo\\.nuget\\packages\\ffmpeginteropx\\1.0.0\\ffmpeginteropx.1.0.0.nupkg.sha512",
-    "C:\\Users\\lezlo\\.nuget\\packages\\ffmpeginteropx.ffmpeguwp\\5.0.0\\ffmpeginteropx.ffmpeguwp.5.0.0.nupkg.sha512",
+    "C:\\Users\\lezlo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\lezlo\\.nuget\\packages\\microsoft.net.native.compiler\\2.2.12-rel-31116-00\\microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Users\\lezlo\\.nuget\\packages\\microsoft.net.uwpcoreruntimesdk\\2.2.14\\microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Users\\lezlo\\.nuget\\packages\\microsoft.netcore.universalwindowsplatform\\6.2.14\\microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512",
     "C:\\Users\\lezlo\\.nuget\\packages\\microsoft.ui.xaml\\2.7.1\\microsoft.ui.xaml.2.7.1.nupkg.sha512",
-    "C:\\Users\\lezlo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\lezlo\\.nuget\\packages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.14\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512",
     "C:\\Users\\lezlo\\.nuget\\packages\\runtime.win10-arm.microsoft.net.native.compiler\\2.2.12-rel-31116-00\\runtime.win10-arm.microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Users\\lezlo\\.nuget\\packages\\runtime.win10-arm.microsoft.net.native.sharedlibrary\\2.2.8-rel-31116-00\\runtime.win10-arm.microsoft.net.native.sharedlibrary.2.2.8-rel-31116-00.nupkg.sha512",
@@ -29,7 +28,14 @@
     "C:\\Users\\lezlo\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.compiler\\2.2.12-rel-31116-00\\runtime.win10-x86.microsoft.net.native.compiler.2.2.12-rel-31116-00.nupkg.sha512",
     "C:\\Users\\lezlo\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.8-rel-31116-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.8-rel-31116-00.nupkg.sha512",
     "C:\\Users\\lezlo\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.14\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.14.nupkg.sha512",
-    "C:\\Users\\lezlo\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.14\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512"
+    "C:\\Users\\lezlo\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.14\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.14.nupkg.sha512",
+    "C:\\Users\\lezlo\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\lezlo\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\lezlo\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\lezlo\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\lezlo\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\lezlo\\.nuget\\packages\\system.text.json\\6.0.5\\system.text.json.6.0.5.nupkg.sha512",
+    "C:\\Users\\lezlo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

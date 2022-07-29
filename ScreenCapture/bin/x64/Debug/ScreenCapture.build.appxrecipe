@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>EWAN11</Machine>
+    <Machine>EWANL</Machine>
     <WindowsUser>lezlo</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,133 +10,103 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>fe6d9b64-5852-4e58-965e-ae8b4272e76c</PackageIdentityName>
     <PackageIdentityPublisher>CN=lezlo</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.exe">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.exe">
       <PackagePath>entrypoint\ScreenCapture.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx\1.0.0\runtimes\win10-x64\native\FFmpegInteropX.dll">
-      <PackagePath>FFmpegInteropX.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avcodec-59.dll">
-      <PackagePath>avcodec-59.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avdevice-59.dll">
-      <PackagePath>avdevice-59.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avfilter-8.dll">
-      <PackagePath>avfilter-8.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avformat-59.dll">
-      <PackagePath>avformat-59.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avutil-57.dll">
-      <PackagePath>avutil-57.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\swresample-4.dll">
-      <PackagePath>swresample-4.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\swscale-6.dll">
-      <PackagePath>swscale-6.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx\1.0.0\lib\uap10.0\FFmpegInteropX.winmd">
-      <PackagePath>FFmpegInteropX.winmd</PackagePath>
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\system.runtime.compilerservices.unsafe\6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\system.text.encodings.web\6.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
+      <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\system.text.json\6.0.5\lib\netstandard2.0\System.Text.Json.dll">
+      <PackagePath>System.Text.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22000.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avcodec.lib">
-      <PackagePath>avcodec.lib</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avdevice.lib">
-      <PackagePath>avdevice.lib</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avfilter.lib">
-      <PackagePath>avfilter.lib</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avformat.lib">
-      <PackagePath>avformat.lib</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avutil.lib">
-      <PackagePath>avutil.lib</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\swresample.lib">
-      <PackagePath>swresample.lib</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\swscale.lib">
-      <PackagePath>swscale.lib</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.xr.xml">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.xr.xml">
       <PackagePath>ScreenCapture.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\GalleryPage.xbf">
+      <PackagePath>GalleryPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ExpanderSettingsCard.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ExpanderSettingsCard.xbf">
       <PackagePath>ExpanderSettingsCard.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\RangedNumberBox.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\RangedNumberBox.xbf">
       <PackagePath>RangedNumberBox.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\SettingsCardInnards.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\SettingsCardInnards.xbf">
       <PackagePath>SettingsCardInnards.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\StaticSettingsCard.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\SettingsPage.xbf">
+      <PackagePath>SettingsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\StaticSettingsCard.xbf">
       <PackagePath>StaticSettingsCard.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Themes\Generic.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Themes\Generic.xbf">
       <PackagePath>Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\WarningCard.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\WarningCard.xbf">
       <PackagePath>WarningCard.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22000.0\\redist\Debug\X64\ucrtbased.dll">
@@ -148,10 +118,10 @@
     <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.7.1\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\ScreenCapture.exe">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\ScreenCapture.exe">
       <PackagePath>ScreenCapture.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

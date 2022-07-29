@@ -10,6 +10,21 @@
     d:Width="1100"
     muxc:BackdropMaterial.ApplyToRootOrPageBackground="True"
     mc:Ignorable="d">
+    <Page.Resources>
+        <Storyboard x:Name="EnterStoryboard">
+            <PopInThemeAnimation
+                FromHorizontalOffset="1000"
+                FromVerticalOffset="0"
+                Storyboard.TargetName="CurrentPageControl"
+                Duration="1" />
+        </Storyboard>
+        <Storyboard x:Name="ExitStoryboard">
+            <PopInThemeAnimation Storyboard.TargetName="CurrentPageControl" 
+                                 FromHorizontalOffset="-1000" 
+                                 FromVerticalOffset="0"
+                                 Duration="1"/>
+        </Storyboard>
+    </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="48" />
@@ -46,7 +61,7 @@
             x:Name="MainNavView"
             Grid.Row="1"
             IsTitleBarAutoPaddingEnabled="False"
-            SelectionChanged="MainNavView_SelectionChanged">
+            SelectionChanged="MainNavView_SelectionChanged" BackRequested="MainNavView_BackRequested">
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem
                     Content="Player"
@@ -57,217 +72,10 @@
                     Icon="AllApps"
                     Tag="CapturePage" />
             </muxc:NavigationView.MenuItems>
-            <Grid
-                Margin="56,24"
-                HorizontalAlignment="Stretch"
-                VerticalAlignment="Stretch"
-                RowSpacing="3">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" MaxWidth="1000" />
-                    <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <ScrollViewer Grid.Row="0" VerticalAlignment="Stretch">
-                    <StackPanel
-                        Grid.Column="0"
-                        Orientation="Vertical"
-                        Spacing="3">
-                        <StackPanel.ChildrenTransitions>
-                            <TransitionCollection>
-                                <RepositionThemeTransition IsStaggeringEnabled="false" />
-                            </TransitionCollection>
-                        </StackPanel.ChildrenTransitions>
-
-                        <!--Button
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Center"
-                    Style="{StaticResource AccentButtonStyle}">
-                    Bingle
-                </Button-->
-
-                        <local:ExpanderSettingsCard>
-                            <local:ExpanderSettingsCard.HeaderInnards>
-                                <local:SettingsCardInnards
-                                    x:Name="OutputCard"
-                                    Title="File"
-                                    IconGlyph="&#xed25;"
-                                    Subtitle="Video will be saved with these settings." />
-                            </local:ExpanderSettingsCard.HeaderInnards>
-                            <local:ExpanderSettingsCard.ExpanderInnards>
-                                <Grid
-                                    HorizontalAlignment="Stretch"
-                                    VerticalAlignment="Center"
-                                    ColumnSpacing="3">
-                                    <StackPanel
-                                        Grid.Column="0"
-                                        HorizontalAlignment="Left"
-                                        VerticalAlignment="Center"
-                                        Orientation="Vertical">
-                                        <TextBlock>
-                                            Output Directory
-                                        </TextBlock>
-                                        <TextBlock
-                                            x:Name="DirectorySubtitle"
-                                            FontSize="{StaticResource CaptionTextBlockFontSize}"
-                                            Foreground="{ThemeResource TextFillColorSecondary}" />
-                                    </StackPanel>
-
-                                    <Button
-                                        x:Name="OutputPathBrowse"
-                                        Grid.Column="1"
-                                        HorizontalAlignment="Right"
-                                        VerticalAlignment="Center"
-                                        Click="OutputPathBrowse_Click"
-                                        ClickMode="Press"
-                                        Content="Browse..." />
-
-                                </Grid>
-                            </local:ExpanderSettingsCard.ExpanderInnards>
-                        </local:ExpanderSettingsCard>
-
-                        <local:StaticSettingsCard>
-                            <local:StaticSettingsCard.Innards>
-                                <local:SettingsCardInnards
-                                    x:Name="ResolutionCard"
-                                    Title="Resolution"
-                                    IconGlyph="&#xe94c;"
-                                    Subtitle="Video will be scaled to this percentage.">
-                                    <local:SettingsCardInnards.RightControl>
-                                        <local:RangedNumberBox x:Name="ResolutionBox" />
-                                    </local:SettingsCardInnards.RightControl>
-                                </local:SettingsCardInnards>
-                            </local:StaticSettingsCard.Innards>
-                        </local:StaticSettingsCard>
-
-                        <local:StaticSettingsCard>
-                            <local:StaticSettingsCard.Innards>
-                                <local:SettingsCardInnards
-                                    x:Name="FPSCard"
-                                    Title="FPS"
-                                    IconGlyph="&#xe722;"
-                                    Subtitle="Video will be recorded at this frequency.">
-                                    <local:SettingsCardInnards.RightControl>
-                                        <local:RangedNumberBox x:Name="FPSBox" />
-                                    </local:SettingsCardInnards.RightControl>
-                                </local:SettingsCardInnards>
-                            </local:StaticSettingsCard.Innards>
-                        </local:StaticSettingsCard>
-
-                        <local:ExpanderSettingsCard>
-                            <local:ExpanderSettingsCard.HeaderInnards>
-                                <local:SettingsCardInnards
-                                    x:Name="CodecCard"
-                                    Title="Encoding"
-                                    IconGlyph="&#xe950;"
-                                    Subtitle="Video will be encoded with these settings." />
-                            </local:ExpanderSettingsCard.HeaderInnards>
-                            <local:ExpanderSettingsCard.ExpanderInnards>
-                                <Grid ColumnSpacing="6" RowSpacing="6">
-                                    <Grid.Resources>
-                                        <Style TargetType="StackPanel">
-                                            <Setter Property="Orientation" Value="Vertical" />
-                                            <Setter Property="Grid.Column" Value="0" />
-                                            <Setter Property="VerticalAlignment" Value="Center" />
-                                        </Style>
-                                        <Style BasedOn="{StaticResource DefaultComboBoxStyle}" TargetType="ComboBox">
-                                            <Setter Property="Grid.Column" Value="1" />
-                                            <Setter Property="SelectedIndex" Value="0" />
-                                            <Setter Property="HorizontalAlignment" Value="Stretch" />
-                                            <Setter Property="VerticalAlignment" Value="Center" />
-                                        </Style>
-                                    </Grid.Resources>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="Auto" />
-                                    </Grid.ColumnDefinitions>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition />
-                                        <RowDefinition />
-                                        <RowDefinition />
-                                        <RowDefinition />
-                                        <RowDefinition />
-                                    </Grid.RowDefinitions>
-                                    <TextBlock Grid.Row="0" VerticalAlignment="Center">Format</TextBlock>
-                                    <ComboBox x:Name="FormatBox" Grid.Row="0" />
-                                    <StackPanel Grid.Row="1">
-                                        <TextBlock>Video Codec</TextBlock>
-                                        <TextBlock
-                                            x:Name="VideoCodecSubtitle"
-                                            FontSize="{StaticResource CaptionTextBlockFontSize}"
-                                            Foreground="{ThemeResource TextFillColorSecondary}" />
-                                    </StackPanel>
-                                    <ComboBox x:Name="VideoCodecBox" Grid.Row="1" />
-                                    <StackPanel Grid.Row="2">
-                                        <TextBlock>Audio Codec</TextBlock>
-                                        <TextBlock
-                                            x:Name="AudioCodecSubtitle"
-                                            FontSize="{StaticResource CaptionTextBlockFontSize}"
-                                            Foreground="{ThemeResource TextFillColorSecondary}" />
-                                    </StackPanel>
-                                    <ComboBox x:Name="AudioCodecBox" Grid.Row="2" />
-                                    <TextBlock Grid.Row="4" VerticalAlignment="Center">Encoder</TextBlock>
-                                    <!--<TextBlock
-                                            x:Name="VideoEncoderAgentSubtitle"
-                                            FontSize="{StaticResource CaptionTextBlockFontSize}"
-                                            Foreground="{ThemeResource TextFillColorSecondary}" />-->
-                                    <ComboBox x:Name="VideoEncoderAgentBox" Grid.Row="4" />
-                                </Grid>
-                            </local:ExpanderSettingsCard.ExpanderInnards>
-                        </local:ExpanderSettingsCard>
-
-                        <local:ExpanderSettingsCard>
-                            <local:ExpanderSettingsCard.HeaderInnards>
-                                <local:SettingsCardInnards
-                                    x:Name="QualityCard"
-                                    Title="Quality"
-                                    IconGlyph="&#xe9e9;"
-                                    Subtitle="Encoding will be done with these quality settings." />
-                            </local:ExpanderSettingsCard.HeaderInnards>
-                            <local:ExpanderSettingsCard.ExpanderInnards>
-                                <TextBlock>Oh yeah</TextBlock>
-                            </local:ExpanderSettingsCard.ExpanderInnards>
-                        </local:ExpanderSettingsCard>
-
-                    </StackPanel>
-                </ScrollViewer>
-                <StackPanel
-                    Grid.Row="1"
-                    Orientation="Vertical"
-                    Spacing="3">
-                    <Grid
-                        Padding="52,16"
-                        Background="{ThemeResource CardBackgroundFillColorDefault}"
-                        BorderBrush="{ThemeResource CardStrokeColorDefault}"
-                        BorderThickness="1"
-                        CornerRadius="4">
-                        <StackPanel Orientation="Horizontal" Spacing="24">
-                            <StackPanel Orientation="Vertical">
-                                <TextBlock Text="Resolution" />
-                                <TextBlock Text="Encoding" />
-                                <TextBlock Text="Naming Scheme" />
-                                <TextBlock Text="Output Folder" />
-                            </StackPanel>
-
-                            <StackPanel Orientation="Vertical">
-                                <StackPanel.Resources>
-                                    <Style TargetType="TextBlock">
-                                        <Setter Property="Foreground" Value="{ThemeResource TextFillColorSecondary}" />
-                                    </Style>
-                                </StackPanel.Resources>
-                                <TextBlock Name="ResolutionBlock" />
-                                <TextBlock Name="EncodingBlock" />
-                                <TextBlock Name="NamingSchemeBlock" />
-                                <TextBlock Name="OutputFolderBlock" />
-                            </StackPanel>
-                        </StackPanel>
-                    </Grid>
-                    <local:WarningCard x:Name="SettingsWarningCard" />
-                </StackPanel>
-            </Grid>
-
+            <ContentControl x:Name="CurrentPageControl"
+                            Margin="56,24"
+                            HorizontalContentAlignment="Stretch" 
+                            VerticalContentAlignment="Stretch"/>
         </muxc:NavigationView>
     </Grid>
 </Page>

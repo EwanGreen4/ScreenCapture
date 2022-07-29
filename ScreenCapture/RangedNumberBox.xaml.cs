@@ -10,6 +10,11 @@ namespace ScreenCapture {
 
         public double Minimum { get; set; } = 0; // these are inclusive
         public double Maximum { get; set; } = 100;
+
+        public double Value { get; set; }
+        public static readonly DependencyProperty ValueDependency =
+            DependencyProperty.Register(nameof(Value), typeof(double), typeof(RangedNumberBox), null);
+
         public string Warning { get; set; } = string.Empty;
 
         public delegate void NumberValidityEventHandler(double e);
@@ -30,19 +35,18 @@ namespace ScreenCapture {
             bool valid;
             double Value = double.NaN;
             if(!string.IsNullOrEmpty(TextBox.Text)) {
-                 double.TryParse(TextBox.Text, out Value);
+                double.TryParse(TextBox.Text, out Value);
                 valid = Value != double.NaN && Value >= Minimum && Value <= Maximum;
-            }
-            else
+            } else
                 valid = false;
 
             if(valid) {
                 Status.Glyph = "\ue73e";
                 if(WarningCard.Strings.Contains(Warning))
                     WarningCard.Strings.Remove(Warning);
+                this.Value = Value;
                 ValidNumberChosen?.Invoke(Value);
-            }
-            else {
+            } else {
                 Status.Glyph = "\ue711";
                 if(!WarningCard.Strings.Contains(Warning))
                     WarningCard.Strings.Add(Warning);

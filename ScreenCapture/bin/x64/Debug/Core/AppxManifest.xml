@@ -40,26 +40,6 @@
   <Extensions>
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
-        <Path>FFmpegInteropX.dll</Path>
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.CodecChecker" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.MediaThumbnailData" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.MediaSourceConfig" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.CharacterEncoding" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.FFmpegMediaSource" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.FFmpegInteropLogging" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.AudioStreamInfo" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.ChapterInfo" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.FormatInfo" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.FrameGrabber" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.VideoEffectConfiguration" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.SubtitleStreamInfo" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.VideoStreamInfo" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.BasicVideoEffect" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="FFmpegInteropX.VideoFrame" ThreadingModel="both" />
-      </InProcessServer>
-    </Extension>
-    <Extension Category="windows.activatableClass.inProcessServer">
-      <InProcessServer>
         <Path>ScreenCapture.exe</Path>
         <ActivatableClass ActivatableClassId="Microsoft.UI.Xaml.Markup.ReflectionXamlMetadataProvider" ThreadingModel="both" />
       </InProcessServer>

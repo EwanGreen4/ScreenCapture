@@ -2,260 +2,16 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.17763": {
-      "FFmpegInteropX/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
         "compile": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win10-arm/native/FFmpegInteropX.dll": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm64/native/FFmpegInteropX.dll": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-x64/native/FFmpegInteropX.dll": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x86/native/FFmpegInteropX.dll": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          }
-        }
-      },
-      "FFmpegInteropX.FFmpegUWP/5.0.0": {
-        "type": "package",
-        "runtimeTargets": {
-          "runtimes/win10-arm/native/avcodec-59.dll": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/avcodec.lib": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/avdevice-59.dll": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/avdevice.lib": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/avfilter-8.dll": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/avfilter.lib": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/avformat-59.dll": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/avformat.lib": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/avutil-57.dll": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/avutil.lib": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/swresample-4.dll": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/swresample.lib": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/swscale-6.dll": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm/native/swscale.lib": {
-            "assetType": "native",
-            "rid": "win10-arm"
-          },
-          "runtimes/win10-arm64/native/avcodec-59.dll": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/avcodec.lib": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/avdevice-59.dll": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/avdevice.lib": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/avfilter-8.dll": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/avfilter.lib": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/avformat-59.dll": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/avformat.lib": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/avutil-57.dll": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/avutil.lib": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/swresample-4.dll": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/swresample.lib": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/swscale-6.dll": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-arm64/native/swscale.lib": {
-            "assetType": "native",
-            "rid": "win10-arm64"
-          },
-          "runtimes/win10-x64/native/avcodec-59.dll": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/avcodec.lib": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/avdevice-59.dll": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/avdevice.lib": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/avfilter-8.dll": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/avfilter.lib": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/avformat-59.dll": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/avformat.lib": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/avutil-57.dll": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/avutil.lib": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/swresample-4.dll": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/swresample.lib": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/swscale-6.dll": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x64/native/swscale.lib": {
-            "assetType": "native",
-            "rid": "win10-x64"
-          },
-          "runtimes/win10-x86/native/avcodec-59.dll": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/avcodec.lib": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/avdevice-59.dll": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/avdevice.lib": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/avfilter-8.dll": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/avfilter.lib": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/avformat-59.dll": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/avformat.lib": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/avutil-57.dll": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/avutil.lib": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/swresample-4.dll": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/swresample.lib": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/swscale-6.dll": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          },
-          "runtimes/win10-x86/native/swscale.lib": {
-            "assetType": "native",
-            "rid": "win10-x86"
-          }
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
@@ -574,38 +330,105 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "build": {
+          "build/System.Text.Json.targets": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
-      "FFmpegInteropX/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
         "compile": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-arm/native/FFmpegInteropX.dll": {}
-        }
-      },
-      "FFmpegInteropX.FFmpegUWP/5.0.0": {
-        "type": "package",
-        "native": {
-          "runtimes/win10-arm/native/avcodec-59.dll": {},
-          "runtimes/win10-arm/native/avcodec.lib": {},
-          "runtimes/win10-arm/native/avdevice-59.dll": {},
-          "runtimes/win10-arm/native/avdevice.lib": {},
-          "runtimes/win10-arm/native/avfilter-8.dll": {},
-          "runtimes/win10-arm/native/avfilter.lib": {},
-          "runtimes/win10-arm/native/avformat-59.dll": {},
-          "runtimes/win10-arm/native/avformat.lib": {},
-          "runtimes/win10-arm/native/avutil-57.dll": {},
-          "runtimes/win10-arm/native/avutil.lib": {},
-          "runtimes/win10-arm/native/swresample-4.dll": {},
-          "runtimes/win10-arm/native/swresample.lib": {},
-          "runtimes/win10-arm/native/swscale-6.dll": {},
-          "runtimes/win10-arm/native/swscale.lib": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
@@ -1103,38 +926,105 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "build": {
+          "build/System.Text.Json.targets": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm-aot": {
-      "FFmpegInteropX/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
         "compile": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-arm/native/FFmpegInteropX.dll": {}
-        }
-      },
-      "FFmpegInteropX.FFmpegUWP/5.0.0": {
-        "type": "package",
-        "native": {
-          "runtimes/win10-arm/native/avcodec-59.dll": {},
-          "runtimes/win10-arm/native/avcodec.lib": {},
-          "runtimes/win10-arm/native/avdevice-59.dll": {},
-          "runtimes/win10-arm/native/avdevice.lib": {},
-          "runtimes/win10-arm/native/avfilter-8.dll": {},
-          "runtimes/win10-arm/native/avfilter.lib": {},
-          "runtimes/win10-arm/native/avformat-59.dll": {},
-          "runtimes/win10-arm/native/avformat.lib": {},
-          "runtimes/win10-arm/native/avutil-57.dll": {},
-          "runtimes/win10-arm/native/avutil.lib": {},
-          "runtimes/win10-arm/native/swresample-4.dll": {},
-          "runtimes/win10-arm/native/swresample.lib": {},
-          "runtimes/win10-arm/native/swscale-6.dll": {},
-          "runtimes/win10-arm/native/swscale.lib": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
@@ -1633,38 +1523,105 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "build": {
+          "build/System.Text.Json.targets": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
-      "FFmpegInteropX/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
         "compile": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-arm64/native/FFmpegInteropX.dll": {}
-        }
-      },
-      "FFmpegInteropX.FFmpegUWP/5.0.0": {
-        "type": "package",
-        "native": {
-          "runtimes/win10-arm64/native/avcodec-59.dll": {},
-          "runtimes/win10-arm64/native/avcodec.lib": {},
-          "runtimes/win10-arm64/native/avdevice-59.dll": {},
-          "runtimes/win10-arm64/native/avdevice.lib": {},
-          "runtimes/win10-arm64/native/avfilter-8.dll": {},
-          "runtimes/win10-arm64/native/avfilter.lib": {},
-          "runtimes/win10-arm64/native/avformat-59.dll": {},
-          "runtimes/win10-arm64/native/avformat.lib": {},
-          "runtimes/win10-arm64/native/avutil-57.dll": {},
-          "runtimes/win10-arm64/native/avutil.lib": {},
-          "runtimes/win10-arm64/native/swresample-4.dll": {},
-          "runtimes/win10-arm64/native/swresample.lib": {},
-          "runtimes/win10-arm64/native/swscale-6.dll": {},
-          "runtimes/win10-arm64/native/swscale.lib": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
@@ -2163,38 +2120,105 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "build": {
+          "build/System.Text.Json.targets": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
-      "FFmpegInteropX/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
         "compile": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-x64/native/FFmpegInteropX.dll": {}
-        }
-      },
-      "FFmpegInteropX.FFmpegUWP/5.0.0": {
-        "type": "package",
-        "native": {
-          "runtimes/win10-x64/native/avcodec-59.dll": {},
-          "runtimes/win10-x64/native/avcodec.lib": {},
-          "runtimes/win10-x64/native/avdevice-59.dll": {},
-          "runtimes/win10-x64/native/avdevice.lib": {},
-          "runtimes/win10-x64/native/avfilter-8.dll": {},
-          "runtimes/win10-x64/native/avfilter.lib": {},
-          "runtimes/win10-x64/native/avformat-59.dll": {},
-          "runtimes/win10-x64/native/avformat.lib": {},
-          "runtimes/win10-x64/native/avutil-57.dll": {},
-          "runtimes/win10-x64/native/avutil.lib": {},
-          "runtimes/win10-x64/native/swresample-4.dll": {},
-          "runtimes/win10-x64/native/swresample.lib": {},
-          "runtimes/win10-x64/native/swscale-6.dll": {},
-          "runtimes/win10-x64/native/swscale.lib": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
@@ -2692,38 +2716,105 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "build": {
+          "build/System.Text.Json.targets": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64-aot": {
-      "FFmpegInteropX/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
         "compile": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-x64/native/FFmpegInteropX.dll": {}
-        }
-      },
-      "FFmpegInteropX.FFmpegUWP/5.0.0": {
-        "type": "package",
-        "native": {
-          "runtimes/win10-x64/native/avcodec-59.dll": {},
-          "runtimes/win10-x64/native/avcodec.lib": {},
-          "runtimes/win10-x64/native/avdevice-59.dll": {},
-          "runtimes/win10-x64/native/avdevice.lib": {},
-          "runtimes/win10-x64/native/avfilter-8.dll": {},
-          "runtimes/win10-x64/native/avfilter.lib": {},
-          "runtimes/win10-x64/native/avformat-59.dll": {},
-          "runtimes/win10-x64/native/avformat.lib": {},
-          "runtimes/win10-x64/native/avutil-57.dll": {},
-          "runtimes/win10-x64/native/avutil.lib": {},
-          "runtimes/win10-x64/native/swresample-4.dll": {},
-          "runtimes/win10-x64/native/swresample.lib": {},
-          "runtimes/win10-x64/native/swscale-6.dll": {},
-          "runtimes/win10-x64/native/swscale.lib": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
@@ -3222,38 +3313,105 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "build": {
+          "build/System.Text.Json.targets": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
-      "FFmpegInteropX/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
         "compile": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-x86/native/FFmpegInteropX.dll": {}
-        }
-      },
-      "FFmpegInteropX.FFmpegUWP/5.0.0": {
-        "type": "package",
-        "native": {
-          "runtimes/win10-x86/native/avcodec-59.dll": {},
-          "runtimes/win10-x86/native/avcodec.lib": {},
-          "runtimes/win10-x86/native/avdevice-59.dll": {},
-          "runtimes/win10-x86/native/avdevice.lib": {},
-          "runtimes/win10-x86/native/avfilter-8.dll": {},
-          "runtimes/win10-x86/native/avfilter.lib": {},
-          "runtimes/win10-x86/native/avformat-59.dll": {},
-          "runtimes/win10-x86/native/avformat.lib": {},
-          "runtimes/win10-x86/native/avutil-57.dll": {},
-          "runtimes/win10-x86/native/avutil.lib": {},
-          "runtimes/win10-x86/native/swresample-4.dll": {},
-          "runtimes/win10-x86/native/swresample.lib": {},
-          "runtimes/win10-x86/native/swscale-6.dll": {},
-          "runtimes/win10-x86/native/swscale.lib": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
@@ -3751,38 +3909,105 @@
         "native": {
           "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll": {}
         }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "build": {
+          "build/System.Text.Json.targets": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86-aot": {
-      "FFmpegInteropX/1.0.0": {
+      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
+        "dependencies": {
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
         "compile": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         },
         "runtime": {
-          "lib/uap10.0/FFmpegInteropX.winmd": {}
-        },
-        "native": {
-          "runtimes/win10-x86/native/FFmpegInteropX.dll": {}
-        }
-      },
-      "FFmpegInteropX.FFmpegUWP/5.0.0": {
-        "type": "package",
-        "native": {
-          "runtimes/win10-x86/native/avcodec-59.dll": {},
-          "runtimes/win10-x86/native/avcodec.lib": {},
-          "runtimes/win10-x86/native/avdevice-59.dll": {},
-          "runtimes/win10-x86/native/avdevice.lib": {},
-          "runtimes/win10-x86/native/avfilter-8.dll": {},
-          "runtimes/win10-x86/native/avfilter.lib": {},
-          "runtimes/win10-x86/native/avformat-59.dll": {},
-          "runtimes/win10-x86/native/avformat.lib": {},
-          "runtimes/win10-x86/native/avutil-57.dll": {},
-          "runtimes/win10-x86/native/avutil.lib": {},
-          "runtimes/win10-x86/native/swresample-4.dll": {},
-          "runtimes/win10-x86/native/swresample.lib": {},
-          "runtimes/win10-x86/native/swscale-6.dll": {},
-          "runtimes/win10-x86/native/swscale.lib": {}
+          "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
@@ -4281,227 +4506,115 @@
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.props": {},
           "build/runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets": {}
         }
+      },
+      "System.Buffers/4.5.1": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/uap10.0.16299/_._": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/_._": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encodings.Web/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
+        }
+      },
+      "System.Text.Json/6.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
+          "System.Buffers": "4.5.1",
+          "System.Memory": "4.5.4",
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "6.0.0",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {}
+        },
+        "build": {
+          "build/System.Text.Json.targets": {}
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.5.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "FFmpegInteropX/1.0.0": {
-      "sha512": "8ei4M7x9c2fow10dbVv39OFUWNkfV/vb+ZlHwD3IXqI4XqyZCxzimvA4ngCrpLEkCHnBRKtcqYFfQgjmfMFOJg==",
+    "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
+      "sha512": "UcSjPsst+DfAdJGVDsu346FX0ci0ah+lw3WRtn18NUwEqRt70HaOQ7lI72vy3+1LxtqI3T5GWwV39rQSrCzAeg==",
       "type": "package",
-      "path": "ffmpeginteropx/1.0.0",
+      "path": "microsoft.bcl.asyncinterfaces/6.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/native/FFmpegInteropX.targets",
-        "ffmpeginteropx.1.0.0.nupkg.sha512",
-        "ffmpeginteropx.nuspec",
-        "lib/uap10.0/FFmpegInteropX.winmd",
-        "lib/uap10.0/FFmpegInteropX.xml",
-        "runtimes/win10-arm/native/FFmpegInteropX.dll",
-        "runtimes/win10-arm64/native/FFmpegInteropX.dll",
-        "runtimes/win10-x64/native/FFmpegInteropX.dll",
-        "runtimes/win10-x86/native/FFmpegInteropX.dll"
-      ]
-    },
-    "FFmpegInteropX.FFmpegUWP/5.0.0": {
-      "sha512": "4nGzNfquJ3egzDTEKND59NNitihglaN1QDL+02CjNdK2q2X4F8D8fX48KBoyMxRHSQQDaXcffBWtbdkfEW0CPg==",
-      "type": "package",
-      "path": "ffmpeginteropx.ffmpeguwp/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/native/FFmpegInteropX.FFmpegUWP.targets",
-        "ffmpeginteropx.ffmpeguwp.5.0.0.nupkg.sha512",
-        "ffmpeginteropx.ffmpeguwp.nuspec",
-        "include/libavcodec/ac3_parser.h",
-        "include/libavcodec/adts_parser.h",
-        "include/libavcodec/avcodec.h",
-        "include/libavcodec/avdct.h",
-        "include/libavcodec/avfft.h",
-        "include/libavcodec/bsf.h",
-        "include/libavcodec/codec.h",
-        "include/libavcodec/codec_desc.h",
-        "include/libavcodec/codec_id.h",
-        "include/libavcodec/codec_par.h",
-        "include/libavcodec/d3d11va.h",
-        "include/libavcodec/defs.h",
-        "include/libavcodec/dirac.h",
-        "include/libavcodec/dv_profile.h",
-        "include/libavcodec/dxva2.h",
-        "include/libavcodec/jni.h",
-        "include/libavcodec/mediacodec.h",
-        "include/libavcodec/packet.h",
-        "include/libavcodec/qsv.h",
-        "include/libavcodec/vdpau.h",
-        "include/libavcodec/version.h",
-        "include/libavcodec/videotoolbox.h",
-        "include/libavcodec/vorbis_parser.h",
-        "include/libavcodec/xvmc.h",
-        "include/libavdevice/avdevice.h",
-        "include/libavdevice/version.h",
-        "include/libavfilter/avfilter.h",
-        "include/libavfilter/buffersink.h",
-        "include/libavfilter/buffersrc.h",
-        "include/libavfilter/version.h",
-        "include/libavformat/avformat.h",
-        "include/libavformat/avio.h",
-        "include/libavformat/version.h",
-        "include/libavutil/adler32.h",
-        "include/libavutil/aes.h",
-        "include/libavutil/aes_ctr.h",
-        "include/libavutil/attributes.h",
-        "include/libavutil/audio_fifo.h",
-        "include/libavutil/avassert.h",
-        "include/libavutil/avconfig.h",
-        "include/libavutil/avstring.h",
-        "include/libavutil/avutil.h",
-        "include/libavutil/base64.h",
-        "include/libavutil/blowfish.h",
-        "include/libavutil/bprint.h",
-        "include/libavutil/bswap.h",
-        "include/libavutil/buffer.h",
-        "include/libavutil/camellia.h",
-        "include/libavutil/cast5.h",
-        "include/libavutil/channel_layout.h",
-        "include/libavutil/common.h",
-        "include/libavutil/cpu.h",
-        "include/libavutil/crc.h",
-        "include/libavutil/des.h",
-        "include/libavutil/detection_bbox.h",
-        "include/libavutil/dict.h",
-        "include/libavutil/display.h",
-        "include/libavutil/dovi_meta.h",
-        "include/libavutil/downmix_info.h",
-        "include/libavutil/encryption_info.h",
-        "include/libavutil/error.h",
-        "include/libavutil/eval.h",
-        "include/libavutil/ffversion.h",
-        "include/libavutil/fifo.h",
-        "include/libavutil/file.h",
-        "include/libavutil/film_grain_params.h",
-        "include/libavutil/frame.h",
-        "include/libavutil/hash.h",
-        "include/libavutil/hdr_dynamic_metadata.h",
-        "include/libavutil/hmac.h",
-        "include/libavutil/hwcontext.h",
-        "include/libavutil/hwcontext_cuda.h",
-        "include/libavutil/hwcontext_d3d11va.h",
-        "include/libavutil/hwcontext_drm.h",
-        "include/libavutil/hwcontext_dxva2.h",
-        "include/libavutil/hwcontext_mediacodec.h",
-        "include/libavutil/hwcontext_opencl.h",
-        "include/libavutil/hwcontext_qsv.h",
-        "include/libavutil/hwcontext_vaapi.h",
-        "include/libavutil/hwcontext_vdpau.h",
-        "include/libavutil/hwcontext_videotoolbox.h",
-        "include/libavutil/hwcontext_vulkan.h",
-        "include/libavutil/imgutils.h",
-        "include/libavutil/intfloat.h",
-        "include/libavutil/intreadwrite.h",
-        "include/libavutil/lfg.h",
-        "include/libavutil/log.h",
-        "include/libavutil/lzo.h",
-        "include/libavutil/macros.h",
-        "include/libavutil/mastering_display_metadata.h",
-        "include/libavutil/mathematics.h",
-        "include/libavutil/md5.h",
-        "include/libavutil/mem.h",
-        "include/libavutil/motion_vector.h",
-        "include/libavutil/murmur3.h",
-        "include/libavutil/opt.h",
-        "include/libavutil/parseutils.h",
-        "include/libavutil/pixdesc.h",
-        "include/libavutil/pixelutils.h",
-        "include/libavutil/pixfmt.h",
-        "include/libavutil/random_seed.h",
-        "include/libavutil/rational.h",
-        "include/libavutil/rc4.h",
-        "include/libavutil/replaygain.h",
-        "include/libavutil/ripemd.h",
-        "include/libavutil/samplefmt.h",
-        "include/libavutil/sha.h",
-        "include/libavutil/sha512.h",
-        "include/libavutil/spherical.h",
-        "include/libavutil/stereo3d.h",
-        "include/libavutil/tea.h",
-        "include/libavutil/threadmessage.h",
-        "include/libavutil/time.h",
-        "include/libavutil/timecode.h",
-        "include/libavutil/timestamp.h",
-        "include/libavutil/tree.h",
-        "include/libavutil/twofish.h",
-        "include/libavutil/tx.h",
-        "include/libavutil/version.h",
-        "include/libavutil/video_enc_params.h",
-        "include/libavutil/xtea.h",
-        "include/libswresample/swresample.h",
-        "include/libswresample/version.h",
-        "include/libswscale/swscale.h",
-        "include/libswscale/version.h",
-        "licenses/bzip2.txt",
-        "licenses/dav1d.txt",
-        "licenses/ffmpeg.txt",
-        "licenses/iconv.txt",
-        "licenses/liblzma.txt",
-        "licenses/libxml2.txt",
-        "licenses/openssl.txt",
-        "licenses/zlib.txt",
-        "runtimes/win10-arm/native/avcodec-59.dll",
-        "runtimes/win10-arm/native/avcodec.lib",
-        "runtimes/win10-arm/native/avdevice-59.dll",
-        "runtimes/win10-arm/native/avdevice.lib",
-        "runtimes/win10-arm/native/avfilter-8.dll",
-        "runtimes/win10-arm/native/avfilter.lib",
-        "runtimes/win10-arm/native/avformat-59.dll",
-        "runtimes/win10-arm/native/avformat.lib",
-        "runtimes/win10-arm/native/avutil-57.dll",
-        "runtimes/win10-arm/native/avutil.lib",
-        "runtimes/win10-arm/native/swresample-4.dll",
-        "runtimes/win10-arm/native/swresample.lib",
-        "runtimes/win10-arm/native/swscale-6.dll",
-        "runtimes/win10-arm/native/swscale.lib",
-        "runtimes/win10-arm64/native/avcodec-59.dll",
-        "runtimes/win10-arm64/native/avcodec.lib",
-        "runtimes/win10-arm64/native/avdevice-59.dll",
-        "runtimes/win10-arm64/native/avdevice.lib",
-        "runtimes/win10-arm64/native/avfilter-8.dll",
-        "runtimes/win10-arm64/native/avfilter.lib",
-        "runtimes/win10-arm64/native/avformat-59.dll",
-        "runtimes/win10-arm64/native/avformat.lib",
-        "runtimes/win10-arm64/native/avutil-57.dll",
-        "runtimes/win10-arm64/native/avutil.lib",
-        "runtimes/win10-arm64/native/swresample-4.dll",
-        "runtimes/win10-arm64/native/swresample.lib",
-        "runtimes/win10-arm64/native/swscale-6.dll",
-        "runtimes/win10-arm64/native/swscale.lib",
-        "runtimes/win10-x64/native/avcodec-59.dll",
-        "runtimes/win10-x64/native/avcodec.lib",
-        "runtimes/win10-x64/native/avdevice-59.dll",
-        "runtimes/win10-x64/native/avdevice.lib",
-        "runtimes/win10-x64/native/avfilter-8.dll",
-        "runtimes/win10-x64/native/avfilter.lib",
-        "runtimes/win10-x64/native/avformat-59.dll",
-        "runtimes/win10-x64/native/avformat.lib",
-        "runtimes/win10-x64/native/avutil-57.dll",
-        "runtimes/win10-x64/native/avutil.lib",
-        "runtimes/win10-x64/native/swresample-4.dll",
-        "runtimes/win10-x64/native/swresample.lib",
-        "runtimes/win10-x64/native/swscale-6.dll",
-        "runtimes/win10-x64/native/swscale.lib",
-        "runtimes/win10-x86/native/avcodec-59.dll",
-        "runtimes/win10-x86/native/avcodec.lib",
-        "runtimes/win10-x86/native/avdevice-59.dll",
-        "runtimes/win10-x86/native/avdevice.lib",
-        "runtimes/win10-x86/native/avfilter-8.dll",
-        "runtimes/win10-x86/native/avfilter.lib",
-        "runtimes/win10-x86/native/avformat-59.dll",
-        "runtimes/win10-x86/native/avformat.lib",
-        "runtimes/win10-x86/native/avutil-57.dll",
-        "runtimes/win10-x86/native/avutil.lib",
-        "runtimes/win10-x86/native/swresample-4.dll",
-        "runtimes/win10-x86/native/swresample.lib",
-        "runtimes/win10-x86/native/swscale-6.dll",
-        "runtimes/win10-x86/native/swscale.lib"
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
+        "microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.Net.Native.Compiler/2.2.12-rel-31116-00": {
@@ -4917,7 +5030,7 @@
       ]
     },
     "NETStandard.Library/2.0.3": {
-      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "sha512": "548M6mnBSJWxsIlkQHfbzoYxpiYFXZZSL00p4GHYv8PkiqFBnnT68mW5mGEsA/ch9fDO9GkPgkFQpWiXZN7mAQ==",
       "type": "package",
       "path": "netstandard.library/2.0.3",
       "files": [
@@ -8970,14 +9083,257 @@
         "runtimes/win10-x86/lib/uap10.0.15138/netstandard.dll",
         "runtimes/win10-x86/nativeassets/uap10.0.15138/clrcompression.dll"
       ]
+    },
+    "System.Buffers/4.5.1": {
+      "sha512": "Rw7ijyl1qqRS0YQD/WycNst8hUUMgrMH4FCn1nNm27M4VxchZ1js3fVjQaANHO5f3sN4isvP4a+Met9Y4YomAg==",
+      "type": "package",
+      "path": "system.buffers/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Buffers.dll",
+        "lib/net461/System.Buffers.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "lib/uap10.0.16299/_._",
+        "ref/net45/System.Buffers.dll",
+        "ref/net45/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "ref/uap10.0.16299/_._",
+        "system.buffers.4.5.1.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/System.Numerics.Vectors.dll",
+        "ref/net45/System.Numerics.Vectors.xml",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.5.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net461/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Encodings.Web/6.0.0": {
+      "sha512": "Vg8eB5Tawm1IFqj4TVK1czJX89rhFxJo9ELqc/Eiq0eXy13RK00eubyU6TJE6y+GQXjyV5gSfiewDUZjQgSE0w==",
+      "type": "package",
+      "path": "system.text.encodings.web/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Text.Encodings.Web.dll",
+        "lib/net461/System.Text.Encodings.Web.xml",
+        "lib/net6.0/System.Text.Encodings.Web.dll",
+        "lib/net6.0/System.Text.Encodings.Web.xml",
+        "lib/netcoreapp3.1/System.Text.Encodings.Web.dll",
+        "lib/netcoreapp3.1/System.Text.Encodings.Web.xml",
+        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
+        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
+        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.6.0.0.nupkg.sha512",
+        "system.text.encodings.web.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Text.Json/6.0.5": {
+      "sha512": "SSH+YYrMpvLcy7Orzb5K1tSyffnFacWahyxCCjYH1PbSHdAF4dekmIetBurFKgtTHDmwEe/J2Csi/7niRH6d/g==",
+      "type": "package",
+      "path": "system.text.json/6.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
+        "build/System.Text.Json.targets",
+        "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/net6.0/System.Text.Json.dll",
+        "lib/net6.0/System.Text.Json.xml",
+        "lib/netcoreapp3.1/System.Text.Json.dll",
+        "lib/netcoreapp3.1/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.6.0.5.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "type": "package",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Threading.Tasks.Extensions.dll",
+        "lib/net461/System.Threading.Tasks.Extensions.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/netcoreapp2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+        "system.threading.tasks.extensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17763": [
-      "FFmpegInteropX >= 1.0.0",
-      "FFmpegInteropX.FFmpegUWP >= 5.0.0",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.14",
-      "Microsoft.UI.Xaml >= 2.7.1"
+      "Microsoft.UI.Xaml >= 2.7.1",
+      "System.Text.Json >= 6.0.5"
     ]
   },
   "packageFolders": {
@@ -8988,11 +9344,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lezlo\\source\\repos\\ScreenCapture\\ScreenCapture\\ScreenCapture.csproj",
+      "projectUniqueName": "C:\\Users\\lezlo\\Source\\Repos\\ScreenCapture\\ScreenCapture\\ScreenCapture.csproj",
       "projectName": "ScreenCapture",
-      "projectPath": "C:\\Users\\lezlo\\source\\repos\\ScreenCapture\\ScreenCapture\\ScreenCapture.csproj",
+      "projectPath": "C:\\Users\\lezlo\\Source\\Repos\\ScreenCapture\\ScreenCapture\\ScreenCapture.csproj",
       "packagesPath": "C:\\Users\\lezlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lezlo\\source\\repos\\ScreenCapture\\ScreenCapture\\obj\\",
+      "outputPath": "C:\\Users\\lezlo\\Source\\Repos\\ScreenCapture\\ScreenCapture\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -9020,14 +9376,6 @@
     "frameworks": {
       "uap10.0.17763": {
         "dependencies": {
-          "FFmpegInteropX": {
-            "target": "Package",
-            "version": "[1.0.0, )"
-          },
-          "FFmpegInteropX.FFmpegUWP": {
-            "target": "Package",
-            "version": "[5.0.0, )"
-          },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.14, )"
@@ -9035,6 +9383,10 @@
           "Microsoft.UI.Xaml": {
             "target": "Package",
             "version": "[2.7.1, )"
+          },
+          "System.Text.Json": {
+            "target": "Package",
+            "version": "[6.0.5, )"
           }
         },
         "imports": [

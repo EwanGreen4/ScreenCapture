@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>EWAN11</Machine>
+    <Machine>EWANL</Machine>
     <WindowsUser>lezlo</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>fe6d9b64-5852-4e58-965e-ae8b4272e76c</PackageIdentityName>
     <PackageIdentityPublisher>CN=lezlo</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>13275B3886EDBBC5E79D30C8D9CAAFC3FFE7DE2C75C971920DAB6C648B9458E1</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>E7411312543C343A7CFA3FE870E27BFA4C4E337F4CDC65B9A818ADB0998F8459</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>fe6d9b64-5852-4e58-965e-ae8b4272e76c_1.0.0.0_x64__y6a94ykj2wvm4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fe6d9b64-5852-4e58-965e-ae8b4272e76c_y6a94ykj2wvm4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fe6d9b64-5852-4e58-965e-ae8b4272e76c</RegisteredPackageID>
@@ -27,162 +27,122 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-07-29T15:51:27.263</Modified>
+      <Modified>2022-07-29T23:15:00.458</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.exe">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.exe">
       <PackagePath>entrypoint\ScreenCapture.exe</PackagePath>
-      <Modified>2022-07-29T15:51:26.360</Modified>
+      <Modified>2022-07-29T23:14:58.840</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx\1.0.0\runtimes\win10-x64\native\FFmpegInteropX.dll">
-      <PackagePath>FFmpegInteropX.dll</PackagePath>
-      <Modified>2022-06-20T18:52:52.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avcodec-59.dll">
-      <PackagePath>avcodec-59.dll</PackagePath>
-      <Modified>2022-02-13T13:47:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avdevice-59.dll">
-      <PackagePath>avdevice-59.dll</PackagePath>
-      <Modified>2022-02-13T13:47:40.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avfilter-8.dll">
-      <PackagePath>avfilter-8.dll</PackagePath>
-      <Modified>2022-02-13T13:47:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avformat-59.dll">
-      <PackagePath>avformat-59.dll</PackagePath>
-      <Modified>2022-02-13T13:47:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avutil-57.dll">
-      <PackagePath>avutil-57.dll</PackagePath>
-      <Modified>2022-02-13T13:47:44.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\swresample-4.dll">
-      <PackagePath>swresample-4.dll</PackagePath>
-      <Modified>2022-02-13T13:47:44.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\swscale-6.dll">
-      <PackagePath>swscale-6.dll</PackagePath>
-      <Modified>2022-02-13T13:47:44.000</Modified>
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
+      <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
+      <Modified>2021-10-22T23:42:10.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2022-06-10T22:23:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx\1.0.0\lib\uap10.0\FFmpegInteropX.winmd">
-      <PackagePath>FFmpegInteropX.winmd</PackagePath>
-      <Modified>2022-06-20T18:52:50.000</Modified>
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\system.runtime.compilerservices.unsafe\6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+      <Modified>2021-10-22T23:40:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\system.text.encodings.web\6.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
+      <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
+      <Modified>2021-10-22T23:42:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\system.text.json\6.0.5\lib\netstandard2.0\System.Text.Json.dll">
+      <PackagePath>System.Text.Json.dll</PackagePath>
+      <Modified>2022-05-17T17:25:08.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.22000.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2021-09-12T00:48:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avcodec.lib">
-      <PackagePath>avcodec.lib</PackagePath>
-      <Modified>2022-02-13T13:47:44.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avdevice.lib">
-      <PackagePath>avdevice.lib</PackagePath>
-      <Modified>2022-02-13T13:47:40.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avfilter.lib">
-      <PackagePath>avfilter.lib</PackagePath>
-      <Modified>2022-02-13T13:47:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avformat.lib">
-      <PackagePath>avformat.lib</PackagePath>
-      <Modified>2022-02-13T13:47:42.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\avutil.lib">
-      <PackagePath>avutil.lib</PackagePath>
-      <Modified>2022-02-13T13:47:44.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\swresample.lib">
-      <PackagePath>swresample.lib</PackagePath>
-      <Modified>2022-02-13T13:47:44.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\ffmpeginteropx.ffmpeguwp\5.0.0\runtimes\win10-x64\native\swscale.lib">
-      <PackagePath>swscale.lib</PackagePath>
-      <Modified>2022-02-13T13:47:44.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2022-07-07T04:46:02.577</Modified>
+      <Modified>2022-07-29T16:32:09.613</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2022-06-20T19:53:09.365</Modified>
+      <Modified>2022-07-29T16:32:09.602</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-06-20T19:53:09.367</Modified>
+      <Modified>2022-07-29T16:32:09.602</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-06-20T19:53:09.367</Modified>
+      <Modified>2022-07-29T16:32:09.607</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-06-20T19:53:09.368</Modified>
+      <Modified>2022-07-29T16:32:09.607</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-06-20T19:53:09.368</Modified>
+      <Modified>2022-07-29T16:32:09.608</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-06-20T19:53:09.369</Modified>
+      <Modified>2022-07-29T16:32:09.608</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-06-20T19:53:09.369</Modified>
+      <Modified>2022-07-29T16:32:09.609</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.xr.xml">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.xr.xml">
       <PackagePath>ScreenCapture.xr.xml</PackagePath>
-      <Modified>2022-07-29T15:51:26.265</Modified>
+      <Modified>2022-07-29T23:14:58.562</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-07-29T15:51:26.279</Modified>
+      <Modified>2022-07-29T23:14:58.603</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\GalleryPage.xbf">
+      <PackagePath>GalleryPage.xbf</PackagePath>
+      <Modified>2022-07-29T23:14:58.603</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-07-29T15:51:26.275</Modified>
+      <Modified>2022-07-29T23:14:58.604</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ExpanderSettingsCard.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ExpanderSettingsCard.xbf">
       <PackagePath>ExpanderSettingsCard.xbf</PackagePath>
-      <Modified>2022-07-29T15:51:26.279</Modified>
+      <Modified>2022-07-29T23:14:58.604</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\RangedNumberBox.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\RangedNumberBox.xbf">
       <PackagePath>RangedNumberBox.xbf</PackagePath>
-      <Modified>2022-07-29T15:51:26.279</Modified>
+      <Modified>2022-07-29T23:14:58.604</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\SettingsCardInnards.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\SettingsCardInnards.xbf">
       <PackagePath>SettingsCardInnards.xbf</PackagePath>
-      <Modified>2022-07-29T15:51:26.279</Modified>
+      <Modified>2022-07-29T23:14:58.604</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\StaticSettingsCard.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\SettingsPage.xbf">
+      <PackagePath>SettingsPage.xbf</PackagePath>
+      <Modified>2022-07-29T23:14:58.601</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\StaticSettingsCard.xbf">
       <PackagePath>StaticSettingsCard.xbf</PackagePath>
-      <Modified>2022-07-29T15:51:26.279</Modified>
+      <Modified>2022-07-29T23:14:58.604</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Themes\Generic.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Themes\Generic.xbf">
       <PackagePath>Themes\Generic.xbf</PackagePath>
-      <Modified>2022-07-29T15:51:26.279</Modified>
+      <Modified>2022-07-29T23:14:58.603</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\WarningCard.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\WarningCard.xbf">
       <PackagePath>WarningCard.xbf</PackagePath>
-      <Modified>2022-07-29T15:51:26.279</Modified>
+      <Modified>2022-07-29T23:14:58.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22000.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -196,13 +156,13 @@
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2022-03-17T16:43:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-07-23T20:41:07.684</Modified>
+      <Modified>2022-07-29T23:10:08.793</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\ScreenCapture.exe">
+    <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\ScreenCapture.exe">
       <PackagePath>ScreenCapture.exe</PackagePath>
-      <Modified>2022-07-29T15:51:27.260</Modified>
+      <Modified>2022-07-29T23:15:00.447</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
