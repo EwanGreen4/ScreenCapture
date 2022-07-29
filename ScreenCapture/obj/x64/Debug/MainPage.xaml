@@ -12,19 +12,18 @@
     mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="32" />
+            <RowDefinition Height="48" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid x:ConnectionId='2'
             x:Name="AppTitleBar"
             Grid.Row="0"
-            Height="32"
-            VerticalAlignment="Top"
+            VerticalAlignment="Stretch"
             Background="Transparent">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition x:ConnectionId='23' x:Name="LeftPaddingColumn" Width="0" />
+                <ColumnDefinition x:ConnectionId='24' x:Name="LeftPaddingColumn" Width="0" />
                 <ColumnDefinition />
-                <ColumnDefinition x:ConnectionId='24' x:Name="RightPaddingColumn" Width="0" />
+                <ColumnDefinition x:ConnectionId='25' x:Name="RightPaddingColumn" Width="0" />
             </Grid.ColumnDefinitions>
             <Image
                 Grid.Row="0"
@@ -34,7 +33,7 @@
                 Margin="8,0,0,0"
                 HorizontalAlignment="Left"
                 Source="Assets/WindowIcon.png" />
-            <TextBlock x:ConnectionId='25'
+            <TextBlock x:ConnectionId='26'
                 x:Name="AppTitleTextBlock"
                 Grid.Row="0"
                 Grid.Column="1"
@@ -91,7 +90,7 @@
 
                         <local:ExpanderSettingsCard>
                             <local:ExpanderSettingsCard.HeaderInnards>
-                                <local:SettingsCardInnards x:ConnectionId='20'
+                                <local:SettingsCardInnards x:ConnectionId='21'
                                     x:Name="OutputCard"
                                     Title="File"
                                     IconGlyph="&#xed25;"
@@ -110,13 +109,13 @@
                                         <TextBlock>
                                             Output Directory
                                         </TextBlock>
-                                        <TextBlock x:ConnectionId='22'
+                                        <TextBlock x:ConnectionId='23'
                                             x:Name="DirectorySubtitle"
                                             FontSize="{StaticResource CaptionTextBlockFontSize}"
                                             Foreground="{ThemeResource TextFillColorSecondary}" />
                                     </StackPanel>
 
-                                    <Button x:ConnectionId='21'
+                                    <Button x:ConnectionId='22'
                                         x:Name="OutputPathBrowse"
                                         Grid.Column="1"
                                         HorizontalAlignment="Right"
@@ -131,13 +130,13 @@
 
                         <local:StaticSettingsCard>
                             <local:StaticSettingsCard.Innards>
-                                <local:SettingsCardInnards x:ConnectionId='18'
+                                <local:SettingsCardInnards x:ConnectionId='19'
                                     x:Name="ResolutionCard"
                                     Title="Resolution"
                                     IconGlyph="&#xe94c;"
                                     Subtitle="Video will be scaled to this percentage.">
                                     <local:SettingsCardInnards.RightControl>
-                                        <local:RangedNumberBox x:ConnectionId='19' x:Name="ResolutionBox" />
+                                        <local:RangedNumberBox x:ConnectionId='20' x:Name="ResolutionBox" />
                                     </local:SettingsCardInnards.RightControl>
                                 </local:SettingsCardInnards>
                             </local:StaticSettingsCard.Innards>
@@ -145,13 +144,13 @@
 
                         <local:StaticSettingsCard>
                             <local:StaticSettingsCard.Innards>
-                                <local:SettingsCardInnards x:ConnectionId='16'
+                                <local:SettingsCardInnards x:ConnectionId='17'
                                     x:Name="FPSCard"
                                     Title="FPS"
                                     IconGlyph="&#xe722;"
                                     Subtitle="Video will be recorded at this frequency.">
                                     <local:SettingsCardInnards.RightControl>
-                                        <local:RangedNumberBox x:ConnectionId='17' x:Name="FPSBox" />
+                                        <local:RangedNumberBox x:ConnectionId='18' x:Name="FPSBox" />
                                     </local:SettingsCardInnards.RightControl>
                                 </local:SettingsCardInnards>
                             </local:StaticSettingsCard.Innards>
@@ -188,12 +187,14 @@
                                         <RowDefinition />
                                         <RowDefinition />
                                         <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
                                     </Grid.RowDefinitions>
                                     <TextBlock Grid.Row="0" VerticalAlignment="Center">Format</TextBlock>
                                     <ComboBox x:ConnectionId='11' x:Name="FormatBox" Grid.Row="0" />
                                     <StackPanel Grid.Row="1">
                                         <TextBlock>Video Codec</TextBlock>
-                                        <TextBlock x:ConnectionId='15'
+                                        <TextBlock x:ConnectionId='16'
                                             x:Name="VideoCodecSubtitle"
                                             FontSize="{StaticResource CaptionTextBlockFontSize}"
                                             Foreground="{ThemeResource TextFillColorSecondary}" />
@@ -201,12 +202,20 @@
                                     <ComboBox x:ConnectionId='12' x:Name="VideoCodecBox" Grid.Row="1" />
                                     <StackPanel Grid.Row="2">
                                         <TextBlock>Audio Codec</TextBlock>
-                                        <TextBlock x:ConnectionId='14'
+                                        <TextBlock x:ConnectionId='15'
                                             x:Name="AudioCodecSubtitle"
                                             FontSize="{StaticResource CaptionTextBlockFontSize}"
                                             Foreground="{ThemeResource TextFillColorSecondary}" />
                                     </StackPanel>
                                     <ComboBox x:ConnectionId='13' x:Name="AudioCodecBox" Grid.Row="2" />
+
+                                    <Rectangle Grid.ColumnSpan="2" Grid.Row="3"  Margin="-52,0"  Fill="{ThemeResource CardStrokeColorDefault}" Opacity="1" Height="1"/>
+                                    <TextBlock Grid.Row="4" VerticalAlignment="Center">Encoder</TextBlock>
+                                    <!--<TextBlock
+                                            x:Name="VideoEncoderAgentSubtitle"
+                                            FontSize="{StaticResource CaptionTextBlockFontSize}"
+                                            Foreground="{ThemeResource TextFillColorSecondary}" />-->
+                                    <ComboBox x:ConnectionId='14' x:Name="VideoEncoderAgentBox" Grid.Row="4" />
                                 </Grid>
                             </local:ExpanderSettingsCard.ExpanderInnards>
                         </local:ExpanderSettingsCard>

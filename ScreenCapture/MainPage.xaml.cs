@@ -17,6 +17,7 @@ using Windows.ApplicationModel;
 using System.Diagnostics;
 using Windows.UI.ViewManagement;
 using Windows.UI.Core;
+using System.Collections.ObjectModel;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -33,8 +34,8 @@ namespace ScreenCapture {
         private ApplicationDataContainer LocalSettings = ApplicationData.Current.LocalSettings;
         private StorageItemAccessList AccessList =
                 Windows.Storage.AccessCache.StorageApplicationPermissions.FutureAccessList;
-
-        public double ResolutionScale { get; set; }
+        
+        public byte ResolutionScale { get; set; }
         public String NamingScheme { get; set; }
         public String AudioCodecName { get; set; }
         public String VideoCodecName { get; set; }
@@ -42,12 +43,12 @@ namespace ScreenCapture {
 
         const string videosKey = "VideoOutputDirectory";
 
-        public Tuple<int, int> RecordingDimensions { get; set; }
-        public readonly Tuple<int, int> ScreenDimensions;
+        public Tuple<ushort, ushort> RecordingDimensions { get; set; }
+        public readonly Tuple<ushort, ushort> ScreenDimensions;
 
-        public double FPS { get; set; }
+        public ushort FPS { get; set; } //cannot use byte because some screens can exceed 255 fps
 
-        public readonly double ScreenRefreshRate;
+        public readonly int PracticalScreenRefreshRate;
 
         private async Task GetVideosFolder() {
             StorageFolder folder = null;
@@ -91,18 +92,25 @@ namespace ScreenCapture {
           "MP4",
        //   "MKV",
           "WebM",
-          "GIF"
+          "GIF", "APNG"
         };
-        private static readonly Dictionary<string, List<string>> VideoCodecs = new Dictionary<string, List<string>>{
-            {"MP4", new List<string>{ "x264", "h264", "x265", "h265", "AV1" }},
-            {"WebM", new List<string>{ "VP8", "VP9", "AV1" }},
-     //       {"MKV", new List<string>{ "VP8", "VP9" }},
+        private static readonly Dictionary<string, ObservableCollection<string>> VideoCodecs = new Dictionary<string, ObservableCollection<string>>{
+            {"MP4", new ObservableCollection<string>{ "x264", "H.264", "x265", "HEVC", "AV1" }},
+            {"WebM", new ObservableCollection<string>{ "VP8", "VP9", "AV1" }},
+     //       {"MKV", new ObservableCollection<string>{  }},
 
          };
-        private static readonly Dictionary<string, List<string>> AudioCodecs = new Dictionary<string, List<string>>{
-            {"MP4", new List<string>{ "AAC", "AC-3", "MP3", "ALAC" }},
-            {"WebM", new List<string>{ "Vorbis", "Opus" }},
-     //       {"MKV", new List<string>{ "VP8", "VP9" }},
+        private static readonly Dictionary<string, ObservableCollection<string>> AudioCodecs = new Dictionary<string, ObservableCollection<string>>{
+            {"MP4", new ObservableCollection<string>{ "AAC", "AC-3", "MP3", "ALAC" }},
+            {"WebM", new ObservableCollection<string>{ "Vorbis", "Opus" }},
+     //       {"MKV", new ObservableCollection<string>{  }},
+         };
+        private static readonly Dictionary<string, ObservableCollection<string>> VideoEncoderAgents = new Dictionary<string, ObservableCollection<string>>{
+            {"H.264", new ObservableCollection<string>{ "x264", "NVENC", "AMF", "Quick Sync"}},
+            {"HEVC", new ObservableCollection<string>{ "x265", "NVENC", "AMF", "Quick Sync" }},
+            //{"WebM", new ObservableCollection<string>{ "VP8", "VP9", "AV1" }},
+     //       {"MKV", new ObservableCollection<string>{  }},
+
          };
 
         private void CoreTitleBar_LayoutMetricsChanged(CoreApplicationViewTitleBar sender, object args) {
@@ -150,37 +158,37 @@ namespace ScreenCapture {
             var displayInformation = DisplayInformation.GetForCurrentView();
             var screenSize = new Size(displayInformation.ScreenWidthInRawPixels,
                                       displayInformation.ScreenHeightInRawPixels);
-            ScreenDimensions = Tuple.Create((int)screenSize.Width, (int)screenSize.Height);
+            ScreenDimensions = Tuple.Create((ushort)screenSize.Width, (ushort)screenSize.Height);
 
             var info = HdmiDisplayInformation.GetForCurrentView();
             if(info != null) {
                 var mode = info.GetCurrentDisplayMode();
                 if(mode != null)
-                    ScreenRefreshRate = mode.RefreshRate;
+                    PracticalScreenRefreshRate = (int)Math.Ceiling(mode.RefreshRate);
                 return;
             }
 
-            ScreenRefreshRate = 60;
+            PracticalScreenRefreshRate = 60;
             // lots of other handy stuff in info; implement colorspace stuff too
 
 
             FPSBox.Minimum = 1;
-            FPSBox.Maximum = ScreenRefreshRate;
+            FPSBox.Maximum = PracticalScreenRefreshRate;
             FPSBox.WarningCard = SettingsWarningCard;
             FPSBox.Warning = $"FPS is out of range. ({FPSBox.Minimum} - {FPSBox.Maximum})";
             FPSBox.ValidNumberChosen += new RangedNumberBox.NumberValidityEventHandler(delegate (double e) {
-                FPS = e;
+                FPS = (ushort)Math.Ceiling(e);
 
                 SetInfoBlock();
             });
-
+            
             ResolutionBox.Minimum = 1;
             ResolutionBox.Maximum = 100;
             ResolutionBox.WarningCard = SettingsWarningCard;
             ResolutionBox.Warning = "Resolution is not a vaild percentage.";
             ResolutionBox.ValidNumberChosen += new RangedNumberBox.NumberValidityEventHandler(delegate (double e) {
-                ResolutionScale = e;
-                RecordingDimensions = Tuple.Create((int)Math.Ceiling(ScreenDimensions.Item1 * ResolutionScale / 100), (int)Math.Ceiling(ScreenDimensions.Item2 * ResolutionScale / 100));
+                ResolutionScale = (byte)Math.Ceiling(e);
+                RecordingDimensions = Tuple.Create((ushort)Math.Ceiling((double)ScreenDimensions.Item1 * ResolutionScale / 100), (ushort)Math.Ceiling((double)ScreenDimensions.Item2 * ResolutionScale / 100));
                 SetInfoBlock();
             });
 
@@ -191,37 +199,30 @@ namespace ScreenCapture {
             FormatBox.SelectionChanged += new SelectionChangedEventHandler(delegate (object sender, SelectionChangedEventArgs e) {
                 VideoFormatName = FormatBox.SelectedItem.ToString();
 
-                VideoCodecBox.Items.Clear();
-
                 if(VideoCodecs.ContainsKey(VideoFormatName)) {
-                    foreach(var i in VideoCodecs[VideoFormatName]) {
-                        VideoCodecBox.Items.Add(i);
-                    }
+                    VideoCodecBox.ItemsSource = VideoCodecs[VideoFormatName];
                     VideoCodecBox.SelectedIndex = 0;
                     VideoCodecBox.IsEnabled = true;
 
                     VideoCodecSubtitle.Text = "";
                     VideoCodecSubtitle.Visibility = Visibility.Collapsed;
-                } 
-                if(VideoCodecBox.Items.Count == 0){
+                } else {
+                    VideoCodecBox.ItemsSource = null;
                     VideoCodecName = "";
                     VideoCodecBox.IsEnabled = false;
                     VideoCodecSubtitle.Visibility = Visibility.Visible;
                     VideoCodecSubtitle.Text = $"Video codecs are not applicable to {VideoFormatName}.";
                 }
 
-                AudioCodecBox.Items.Clear();
                 if(AudioCodecs.ContainsKey(VideoFormatName)) {
-                    foreach(var i in AudioCodecs[VideoFormatName]) {
-                        AudioCodecBox.Items.Add(i);
-                    }
+                    AudioCodecBox.ItemsSource = AudioCodecs[VideoFormatName];
                     AudioCodecBox.SelectedIndex = 0;
                     AudioCodecBox.IsEnabled = true;
 
                     AudioCodecSubtitle.Text = "";
                     AudioCodecSubtitle.Visibility = Visibility.Collapsed;
-                } 
-                if(AudioCodecBox.Items.Count == 0) {
+                } else {
+                    AudioCodecBox.ItemsSource = null;
                     AudioCodecName = "";
                     AudioCodecBox.IsEnabled = false;
                     AudioCodecSubtitle.Visibility = Visibility.Visible;
@@ -245,7 +246,7 @@ namespace ScreenCapture {
         }
 
         private void SetInfoBlock() {
-            if(FPS == double.NaN || ResolutionScale == double.NaN || RecordingDimensions == null || string.IsNullOrEmpty(VideoFormatName) || string.IsNullOrEmpty(VideosFolder.Path))
+            if(FPS <= 0 || ResolutionScale <= 0 || RecordingDimensions == null || string.IsNullOrEmpty(VideoFormatName) || string.IsNullOrEmpty(VideosFolder.Path))
                 return;
 
             ResolutionBlock.Text = $"{RecordingDimensions.Item1}x{RecordingDimensions.Item2} at {FPS} FPS (At fullscreen with {ResolutionScale}% scaling)";
