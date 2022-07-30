@@ -36,9 +36,9 @@
             VerticalAlignment="Stretch"
             Background="Transparent">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition x:ConnectionId='7' x:Name="LeftPaddingColumn" Width="0" />
+                <ColumnDefinition x:ConnectionId='9' x:Name="LeftPaddingColumn" Width="0" />
                 <ColumnDefinition />
-                <ColumnDefinition x:ConnectionId='8' x:Name="RightPaddingColumn" Width="0" />
+                <ColumnDefinition x:ConnectionId='10' x:Name="RightPaddingColumn" Width="0" />
             </Grid.ColumnDefinitions>
             <Image
                 Grid.Row="0"
@@ -48,7 +48,7 @@
                 Margin="8,0,0,0"
                 HorizontalAlignment="Left"
                 Source="Assets/WindowIcon.png" />
-            <TextBlock x:ConnectionId='9'
+            <TextBlock x:ConnectionId='11'
                 x:Name="AppTitleTextBlock"
                 Grid.Row="0"
                 Grid.Column="1"
@@ -63,16 +63,18 @@
             IsTitleBarAutoPaddingEnabled="False"
                                                                                                      >
             <muxc:NavigationView.MenuItems>
-                <muxc:NavigationViewItem
+                <muxc:NavigationViewItem x:ConnectionId='6'
+                    x:Name="PlayerPage"
                     Content="Player"
                     Icon="Play"
                     Tag="PlayerPage" />
-                <muxc:NavigationViewItem
+                <muxc:NavigationViewItem x:ConnectionId='7'
                     Content="Capture Gallery"
+                    x:Name="CapturePage"
                     Icon="AllApps"
                     Tag="CapturePage" />
             </muxc:NavigationView.MenuItems>
-            <ContentControl x:ConnectionId='6' x:Name="CurrentPageControl"
+            <ContentControl x:ConnectionId='8' x:Name="CurrentPageControl"
                             Margin="56,24"
                             HorizontalContentAlignment="Stretch" 
                             VerticalContentAlignment="Stretch"/>

@@ -64,6 +64,7 @@ namespace ScreenCapture {
             coreTitleBar.IsVisibleChanged += CoreTitleBar_IsVisibleChanged;
             Window.Current.CoreWindow.Activated += CoreWindow_Activated;
 
+            MainNavView.SelectedItem = CapturePage;
         }
 
         private Stack<Microsoft.UI.Xaml.Controls.NavigationViewItemBase> NavigationHistory = new Stack<Microsoft.UI.Xaml.Controls.NavigationViewItemBase>();
@@ -81,11 +82,11 @@ namespace ScreenCapture {
                     break;
 
             }
+            MainNavView.Header = str;
         }
         private void MainNavView_SelectionChanged(Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewSelectionChangedEventArgs args) {
             var item = args.SelectedItemContainer;
             NavigationHistory.Push(item);
-            sender.Header = item.Content.ToString();
             pollNavigation(item.Content.ToString());
 
             MainNavView.IsBackEnabled = NavigationHistory.Count > 1;
@@ -94,7 +95,6 @@ namespace ScreenCapture {
 
         private void MainNavView_BackRequested(Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewBackRequestedEventArgs args) {
             var item = NavigationHistory.Pop();
-            sender.Header = item.Content.ToString();
             pollNavigation(item.Content.ToString());
             MainNavView.SelectedItem = item;
 

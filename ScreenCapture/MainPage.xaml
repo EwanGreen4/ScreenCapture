@@ -64,11 +64,13 @@
             SelectionChanged="MainNavView_SelectionChanged" BackRequested="MainNavView_BackRequested">
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem
+                    x:Name="PlayerPage"
                     Content="Player"
                     Icon="Play"
                     Tag="PlayerPage" />
                 <muxc:NavigationViewItem
                     Content="Capture Gallery"
+                    x:Name="CapturePage"
                     Icon="AllApps"
                     Tag="CapturePage" />
             </muxc:NavigationView.MenuItems>
