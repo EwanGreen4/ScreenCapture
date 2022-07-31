@@ -15,6 +15,7 @@ using Windows.UI.Core;
 using System.Collections.ObjectModel;
 
 using System.Text.Json;
+using System.Diagnostics;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 
@@ -94,12 +95,13 @@ namespace ScreenCapture {
         }
 
         private void MainNavView_BackRequested(Microsoft.UI.Xaml.Controls.NavigationView sender, Microsoft.UI.Xaml.Controls.NavigationViewBackRequestedEventArgs args) {
+            NavigationHistory.Pop();
             var item = NavigationHistory.Pop();
-            pollNavigation(item.Content.ToString());
             MainNavView.SelectedItem = item;
+//            pollNavigation(item.Content.ToString());
 
-            MainNavView.IsBackEnabled = NavigationHistory.Count > 1;
-            ExitStoryboard.Begin();
+          //  MainNavView.IsBackEnabled = NavigationHistory.Count > 1;
+        //    ExitStoryboard.Begin();
         }
     }
 }
