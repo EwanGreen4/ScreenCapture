@@ -98,10 +98,7 @@ namespace ScreenCapture {
             NavigationHistory.Pop();
             var item = NavigationHistory.Pop();
             MainNavView.SelectedItem = item;
-//            pollNavigation(item.Content.ToString());
-
-          //  MainNavView.IsBackEnabled = NavigationHistory.Count > 1;
-        //    ExitStoryboard.Begin();
+            ExitStoryboard.Begin();
         }
     }
 }

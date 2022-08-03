@@ -18,9 +18,25 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Grid.RowSpacing>6</Grid.RowSpacing>
+        <Grid.ColumnSpacing>6</Grid.ColumnSpacing>
+
+        <Grid CornerRadius="4"         Background="{ThemeResource CardBackgroundFillColorDefault}"
+        BorderBrush="{ThemeResource CardStrokeColorDefault}" Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="24"/>
+            </Grid.RowDefinitions>
+            <Rectangle Fill="Black" Grid.Row="0" VerticalAlignment="Stretch"></Rectangle>
+            <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">zzzzzzzzzz</TextBlock>
+            
+        </Grid>
+            <Frame CornerRadius="4"         Background="{ThemeResource CardBackgroundFillColorDefault}"
+        BorderBrush="{ThemeResource CardStrokeColorDefault}" Grid.Row="0" Grid.Column="1"/>
         <Frame CornerRadius="4"         Background="{ThemeResource CardBackgroundFillColorDefault}"
-        BorderBrush="{ThemeResource CardStrokeColorDefault}" Grid.Row="0" Grid.Column="0"/>
+        BorderBrush="{ThemeResource CardStrokeColorDefault}" Grid.Row="1" Grid.Column="0"/>
         <Frame CornerRadius="4"         Background="{ThemeResource CardBackgroundFillColorDefault}"
         BorderBrush="{ThemeResource CardStrokeColorDefault}" Grid.Row="1" Grid.Column="1"/>
+
     </Grid>
 </UserControl>

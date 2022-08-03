@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-07-31T06:03:01.844</Modified>
+      <Modified>2022-07-31T18:54:53.059</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.exe">
       <PackagePath>entrypoint\ScreenCapture.exe</PackagePath>
-      <Modified>2022-07-31T06:03:00.335</Modified>
+      <Modified>2022-07-31T18:54:51.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
@@ -102,47 +102,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.xr.xml">
       <PackagePath>ScreenCapture.xr.xml</PackagePath>
-      <Modified>2022-07-29T23:14:58.562</Modified>
+      <Modified>2022-07-31T18:54:51.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-07-31T06:03:00.120</Modified>
+      <Modified>2022-07-31T18:54:51.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\GalleryPage.xbf">
       <PackagePath>GalleryPage.xbf</PackagePath>
-      <Modified>2022-07-31T06:03:00.120</Modified>
+      <Modified>2022-07-31T18:54:51.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-07-31T06:03:00.120</Modified>
+      <Modified>2022-07-31T18:54:51.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ExpanderSettingsCard.xbf">
       <PackagePath>ExpanderSettingsCard.xbf</PackagePath>
-      <Modified>2022-07-31T06:03:00.120</Modified>
+      <Modified>2022-07-31T18:54:51.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\RangedNumberBox.xbf">
       <PackagePath>RangedNumberBox.xbf</PackagePath>
-      <Modified>2022-07-31T06:03:00.121</Modified>
+      <Modified>2022-07-31T18:54:51.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\SettingsCardInnards.xbf">
       <PackagePath>SettingsCardInnards.xbf</PackagePath>
-      <Modified>2022-07-31T06:03:00.121</Modified>
+      <Modified>2022-07-31T18:54:51.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\SettingsPage.xbf">
       <PackagePath>SettingsPage.xbf</PackagePath>
-      <Modified>2022-07-31T06:03:00.117</Modified>
+      <Modified>2022-07-31T18:54:51.265</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\StaticSettingsCard.xbf">
       <PackagePath>StaticSettingsCard.xbf</PackagePath>
-      <Modified>2022-07-31T06:03:00.121</Modified>
+      <Modified>2022-07-31T18:54:51.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Themes\Generic.xbf">
       <PackagePath>Themes\Generic.xbf</PackagePath>
-      <Modified>2022-07-31T06:03:00.120</Modified>
+      <Modified>2022-07-31T18:54:51.267</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\WarningCard.xbf">
       <PackagePath>WarningCard.xbf</PackagePath>
-      <Modified>2022-07-31T06:03:00.121</Modified>
+      <Modified>2022-07-31T18:54:51.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22000.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -162,7 +162,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\ScreenCapture.exe">
       <PackagePath>ScreenCapture.exe</PackagePath>
-      <Modified>2022-07-31T06:03:01.839</Modified>
+      <Modified>2022-07-31T18:54:53.053</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

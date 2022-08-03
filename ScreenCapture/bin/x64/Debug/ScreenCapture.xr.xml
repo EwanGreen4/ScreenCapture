@@ -15,17 +15,18 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="ColumnDefinitions" />
-      <RootProperty Name="Children" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="ColumnSpacing" />
       <RootProperty Name="RowSpacing" />
+      <RootProperty Name="ColumnSpacing" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
-      <RootProperty Name="CornerRadius" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="ChildrenTransitions" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumn" />
@@ -48,6 +49,21 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Fill" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Name" />
+    </RootType>
     <RootType FullName="ScreenCapture.GalleryPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Resources" />
@@ -63,6 +79,10 @@
       <RootMethod Name="SetTargetName" />
       <RootMethod Name="GetTargetProperty" />
       <RootMethod Name="SetTargetProperty" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.SwipeBackThemeAnimation">
+      <RootProperty Name="FromHorizontalOffset" />
+      <RootProperty Name="FromVerticalOffset" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.PopInThemeAnimation">
       <RootProperty Name="FromHorizontalOffset" />
@@ -97,16 +117,6 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Source" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Name" />
-      <RootProperty Name="Inlines" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="ScreenCapture.MainPage" />

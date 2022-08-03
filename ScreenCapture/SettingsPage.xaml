@@ -140,6 +140,11 @@
                                 <RowDefinition />
                                 <RowDefinition />
                             </Grid.RowDefinitions>
+                            <Grid.ChildrenTransitions>
+                                <TransitionCollection>
+                                    <RepositionThemeTransition IsStaggeringEnabled="false" />
+                                </TransitionCollection>
+                            </Grid.ChildrenTransitions>
                             <TextBlock Grid.Row="0" VerticalAlignment="Center">Format</TextBlock>
                             <ComboBox x:Name="FormatBox" Grid.Row="0" />
                             <StackPanel Grid.Row="1">

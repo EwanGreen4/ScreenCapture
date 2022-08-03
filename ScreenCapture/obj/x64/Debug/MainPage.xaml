@@ -15,14 +15,13 @@
             <PopInThemeAnimation
                 FromHorizontalOffset="1000"
                 FromVerticalOffset="0"
-                Storyboard.TargetName="CurrentPageControl"
-                Duration="1" />
+                Storyboard.TargetName="CurrentPageControl"/>
         </Storyboard>
         <Storyboard x:ConnectionId='3' x:Name="ExitStoryboard">
-            <PopInThemeAnimation Storyboard.TargetName="CurrentPageControl" 
+            <SwipeBackThemeAnimation Storyboard.TargetName="CurrentPageControl" FromHorizontalOffset="-1000" FromVerticalOffset="0"/>
+            <!--<PopInThemeAnimation Storyboard.TargetName="CurrentPageControl" 
                                  FromHorizontalOffset="-1000" 
-                                 FromVerticalOffset="0"
-                                 Duration="1"/>
+                                 FromVerticalOffset="0"/>-->
         </Storyboard>
     </Page.Resources>
     <Grid>
