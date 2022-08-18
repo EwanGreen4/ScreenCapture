@@ -62,11 +62,13 @@ namespace ScreenCapture {
         }
 
         private void SetVideosFolder(StorageFolder s) {
-            AccessList.Clear();
-            LocalSettings.Values.Remove(videosKey);
-            LocalSettings.Values[videosKey] = AccessList.Add(s);
-            Config.VideosFolder = s;
-            DirectorySubtitle.Text = Config.VideosFolder.Path;
+            if(s != null) {
+                AccessList.Clear();
+                LocalSettings.Values.Remove(videosKey);
+                LocalSettings.Values[videosKey] = AccessList.Add(s);
+                Config.VideosFolder = s;
+                DirectorySubtitle.Text = Config.VideosFolder.Path;
+            }
         }
 
         private async Task<StorageFolder> ChooseVideoPath() {
@@ -241,7 +243,7 @@ namespace ScreenCapture {
             await FileIO.WriteTextAsync(File, ConfigString);
         }
         private void SetInfoBlock() {
-            if(Config.FPS <= 0 || Config.ResolutionScale <= 0 || RecordingDimensions == null || string.IsNullOrEmpty(Config.VideoFormatName) || Config.VideosFolder == null || string.IsNullOrEmpty(Config.VideosFolder.Path))
+            if(Config.FPS <= 0 || Config.ResolutionScale <= 0 || RecordingDimensions == null || string.IsNullOrEmpty(Config.VideoFormatName) || Config.VideosFolder == null || string.IsNullOrEmpty(Config.VideosFolder.Path) || string.IsNullOrEmpty(Config.NamingScheme))
                 return;
 
             ResolutionBlock.Text = $"{RecordingDimensions.Item1}x{RecordingDimensions.Item2} at {Config.FPS} FPS (At fullscreen with {Config.ResolutionScale}% scaling)";
@@ -253,9 +255,93 @@ namespace ScreenCapture {
             if(!String.IsNullOrEmpty(Config.AudioCodecName))
                 EncodingString += " and " + Config.AudioCodecName;
             EncodingBlock.Text = EncodingString;
+            NamingSchemeBlock.Text = Config.NamingScheme;
             OutputFolderBlock.Text = Config.VideosFolder.Path;
 
             SaveConfig();
+        }
+
+
+        private void DetermineTargetFileSizeControlsEnabledState(object sender, RoutedEventArgs e) {
+            bool c = TargetFilesizeCheckBox.IsChecked.HasValue ? TargetFilesizeCheckBox.IsChecked.Value : false;
+            TargetFilesizeUnit.IsEnabled = c;
+            TargetFilesizeBox.IsEnabled = c;
+        }
+
+        private async void NamingSchemeLinkInfo_Click(Windows.UI.Xaml.Documents.Hyperlink sender, Windows.UI.Xaml.Documents.HyperlinkClickEventArgs args) {
+            StackPanel OuterPanel = new() {
+                Spacing = 12,
+                Orientation = Orientation.Vertical,
+                HorizontalAlignment = HorizontalAlignment.Stretch,
+            };
+            Grid InnerGrid = new() {
+                ColumnSpacing = 12,
+                HorizontalAlignment = HorizontalAlignment.Stretch,
+            };
+            TextBlock ControlLabel = new() { Text = "Naming Scheme:", VerticalAlignment = VerticalAlignment.Center, HorizontalAlignment = HorizontalAlignment.Stretch };
+            TextBlock Description = new() {
+                Text = "%D - Full date and time; 3:54:43-PM_8-9-2022 \n" +
+                "%d - Date; 8-9-2022\n" +
+                "%T - Time of day (imprecise); 3:54 PM\n" +
+                "%t - Time of day (precise); 15:54:43\n" +
+                "%U - Unix timestamp; e.g. 1660082083\n" +
+                "%Z - Timezone offset; UTC-06:00\n" +
+                "%z - Timezone name; Mountain Time\n" +
+                "%H - Hour (24-hour); 15\n" +
+                "%h - Hour (local); 3\n" +
+                "%m - Minute; 54\n" +
+                "%s - Second; 43\n" +
+                "%R - Video resolution; 1920x1080\n" +
+                "%r - Video resolution scale; 50%\n" +
+                "All time and date variables are in accordance with localization settings.",
+            };
+
+            TextBox box = new();
+
+            box.SetBinding(TextBox.TextProperty, new Binding {
+                Source = NamingSchemeBox,
+                Path = new PropertyPath("Text"),
+                Mode = BindingMode.TwoWay,
+            });
+            box.SetBinding(TextBox.PlaceholderTextProperty, new Binding {
+                Source = NamingSchemeBox,
+                Path = new PropertyPath("PlaceholderText"),
+                Mode = BindingMode.TwoWay
+            });
+
+            InnerGrid.ColumnDefinitions.Add(new() { Width = new GridLength(1, GridUnitType.Star) });
+            InnerGrid.ColumnDefinitions.Add(new() { Width = GridLength.Auto });
+
+
+            Grid.SetColumn(ControlLabel, 0);
+            Grid.SetColumn(box, 1);
+
+            InnerGrid.Children.Add(ControlLabel);
+            InnerGrid.Children.Add(box);
+
+
+            OuterPanel.Children.Add(Description);
+            OuterPanel.Children.Add(InnerGrid);
+
+            ContentDialog NamingSchemeDialog = new() {
+                Title = "Naming Scheme Syntax",
+                Content = OuterPanel,
+                HorizontalContentAlignment = HorizontalAlignment.Stretch,
+                CloseButtonText = "Done"
+            };
+
+            await Extensions.ShowWithAnimationAsync(NamingSchemeDialog);
+        }
+
+        private void NamingSchemeBox_TextChanged(object sender, TextChangedEventArgs e) {
+            //if(validNamingScheme(NamingSchemeBox.Text))
+            Config.NamingScheme = NamingSchemeBox.Text;
+            SetInfoBlock();
+        }
+
+        private void TestButton_Click(object sender, RoutedEventArgs e) {
+            var rui = new CaptureRegionUI();
+            rui.promptForSelection();
         }
 
         //private void Page_Loaded(object sender, RoutedEventArgs e) {

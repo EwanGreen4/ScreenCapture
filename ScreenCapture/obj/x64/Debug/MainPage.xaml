@@ -15,12 +15,15 @@
             <PopInThemeAnimation
                 FromHorizontalOffset="1000"
                 FromVerticalOffset="0"
-                Storyboard.TargetName="CurrentPageControl"/>
+                Storyboard.TargetName="CurrentPageControl" />
         </Storyboard>
         <Storyboard x:ConnectionId='3' x:Name="ExitStoryboard">
-            <SwipeBackThemeAnimation Storyboard.TargetName="CurrentPageControl" FromHorizontalOffset="-1000" FromVerticalOffset="0"/>
-            <!--<PopInThemeAnimation Storyboard.TargetName="CurrentPageControl" 
-                                 FromHorizontalOffset="-1000" 
+            <SwipeBackThemeAnimation
+                FromHorizontalOffset="-1000"
+                FromVerticalOffset="0"
+                Storyboard.TargetName="CurrentPageControl" />
+            <!--<PopInThemeAnimation Storyboard.TargetName="CurrentPageControl"
+                                 FromHorizontalOffset="-1000"
                                  FromVerticalOffset="0"/>-->
         </Storyboard>
     </Page.Resources>
@@ -59,8 +62,9 @@
         <muxc:NavigationView x:ConnectionId='5'
             x:Name="MainNavView"
             Grid.Row="1"
+                                                     
             IsTitleBarAutoPaddingEnabled="False"
-                                                                                                     >
+                                                           >
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem x:ConnectionId='6'
                     x:Name="PlayerPage"
@@ -68,15 +72,18 @@
                     Icon="Play"
                     Tag="PlayerPage" />
                 <muxc:NavigationViewItem x:ConnectionId='7'
-                    Content="Capture Gallery"
                     x:Name="CapturePage"
+                    Content="Capture Gallery"
                     Icon="AllApps"
                     Tag="CapturePage" />
             </muxc:NavigationView.MenuItems>
-            <ContentControl x:ConnectionId='8' x:Name="CurrentPageControl"
-                            Margin="56,24"
-                            HorizontalContentAlignment="Stretch" 
-                            VerticalContentAlignment="Stretch"/>
+            <ContentControl x:ConnectionId='8'
+                x:Name="CurrentPageControl"
+                Margin="56,24"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                HorizontalContentAlignment="Stretch"
+                VerticalContentAlignment="Stretch" />
         </muxc:NavigationView>
     </Grid>
 </Page>

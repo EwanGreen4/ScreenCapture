@@ -1,1 +1,1 @@
-C:\Users\lezlo\Source\Repos\ScreenCapture\ScreenCapture\ScreenCapture.csproj;x64
+C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\ScreenCapture.csproj;x64
