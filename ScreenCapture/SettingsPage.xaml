@@ -111,6 +111,7 @@
                                 Grid.Row="1"
                                 Grid.Column="1"
                                 PlaceholderText="%T-%R"
+                                VerticalContentAlignment="Center"
                                 Text="{x:Bind Config.NamingScheme, Mode=OneWay}"
                                 TextChanged="NamingSchemeBox_TextChanged" />
                             <!--<ToggleButton VerticalAlignment="Stretch" VerticalContentAlignment="Center">

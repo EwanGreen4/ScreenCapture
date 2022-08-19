@@ -164,6 +164,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="VerticalContentAlignment" />
       <RootProperty Name="Text" />
       <RootEvent Name="Loaded" />
       <RootEvent Name="TextChanged" />
