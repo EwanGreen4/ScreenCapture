@@ -33,7 +33,6 @@ namespace ScreenCapture {
         public DataTemplate RightControlTemplate { get; set; }
         public DataTemplateSelector RightControlTemplateSelector { get; set; }
 
-
         public SettingsCardInnards() {
             this.InitializeComponent();
         }

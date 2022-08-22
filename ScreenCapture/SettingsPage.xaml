@@ -285,6 +285,7 @@
                                 x:Name="VideoQualityButton"
                                 Grid.Row="0"
                                 Grid.Column="1"
+                                Click="VideoQualityButton_Click"
                                 HorizontalAlignment="Right">
                                 Configure...
                             </Button>
@@ -306,6 +307,7 @@
                                 x:Name="AudioQualityButton"
                                 Grid.Row="1"
                                 Grid.Column="1"
+                                Click="AudioQualityButton_Click"
                                 HorizontalAlignment="Right">
                                 Configure...
                             </Button>
