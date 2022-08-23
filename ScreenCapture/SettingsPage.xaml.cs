@@ -349,45 +349,44 @@ namespace ScreenCapture {
         }
 
         private async void AudioQualityButton_Click(object sender, RoutedEventArgs e) {
-            StackPanel OuterPanel = new() {
-                Spacing = 12,
-                Orientation = Orientation.Vertical,
-                HorizontalAlignment = HorizontalAlignment.Stretch,
-            };
+            //StackPanel OuterPanel = new() {
+            //    Spacing = 12,
+            //    Orientation = Orientation.Vertical,
+            //    HorizontalAlignment = HorizontalAlignment.Stretch,
+            //};
 
-            TextBlock Description = new() {
-                Text = $"Audio quality settings for {Config.AudioCodecName}."
-            };
+            //TextBlock Description = new() {
+            //    Text = $"Audio quality settings for {Config.AudioCodecName}."
+            //};
 
-            OuterPanel.Children.Add(Description);
+            //OuterPanel.Children.Add(Description);
 
-            TextBox sampleRateBox = new() { HorizontalAlignment = HorizontalAlignment.Left};
-            TextBlock sampleRateLabel = new() { Text = "Hz", VerticalAlignment = VerticalAlignment.Center };
+            //TextBox sampleRateBox = new() { HorizontalAlignment = HorizontalAlignment.Left};
+            //TextBlock sampleRateLabel = new() { Text = "Hz", VerticalAlignment = VerticalAlignment.Center };
 
-            StackPanel sampleRateContents = new() {
-                Spacing = 6, Orientation = Orientation.Horizontal, HorizontalAlignment = HorizontalAlignment.Left,
-            };
-            
-            sampleRateContents.Children.Add(sampleRateBox);
-            sampleRateContents.Children.Add(sampleRateLabel);
+            //StackPanel sampleRateContents = new() {
+            //    Spacing = 6, Orientation = Orientation.Horizontal, HorizontalAlignment = HorizontalAlignment.Left,
+            //};
 
-            SettingsCardInnards sampleRate = new() {
-                Title = "Sample Rate", Subtitle = "Audio samples taken every second", RightControl = sampleRateContents, HorizontalAlignment = HorizontalAlignment.Stretch, VerticalAlignment = VerticalAlignment.Center
-            };
+            //sampleRateContents.Children.Add(sampleRateBox);
+            //sampleRateContents.Children.Add(sampleRateLabel);
 
-            OuterPanel.Children.Add(sampleRate);
+            //SettingsCardInnards sampleRate = new() {
+            //    Title = "Sample Rate", Subtitle = "Audio samples taken every second", RightControl = sampleRateContents, HorizontalAlignment = HorizontalAlignment.Stretch, VerticalAlignment = VerticalAlignment.Center
+            //};
 
-
+            //OuterPanel.Children.Add(sampleRate);
 
 
-            ContentDialog AudioQualityDialog = new() {
-                Title = "Audio Quality",
-                Content = OuterPanel,
-                HorizontalContentAlignment = HorizontalAlignment.Stretch,
-                CloseButtonText = "Done"
-            };
 
-            await Extensions.ShowWithAnimationAsync(AudioQualityDialog);
+
+            //ContentDialog AudioQualityDialog = new() {
+            //    Title = "Audio Quality",
+            //    Content = OuterPanel,
+            //    HorizontalContentAlignment = HorizontalAlignment.Stretch,
+            //    CloseButtonText = "Done"
+            //};
+            await Extensions.ShowWithAnimationAsync(new AudioQualityDialog() { CloseButtonText = "Done", Title="Audio Quality"});
 
         }
 

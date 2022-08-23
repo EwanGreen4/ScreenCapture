@@ -203,3 +203,8 @@ C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\.winmd_cach
 C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637425067200000000.json
 C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637670045380000000.json
 C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\.winmd_cache\$Microsoft.Web.WebView2.Core.winmd_637920505780000000.json
+C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\AudioQualityDialog.xbf
+C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.g.i.cs
+C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.g.cs
+C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.xaml
+C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.xbf

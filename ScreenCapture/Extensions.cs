@@ -9,11 +9,12 @@ using Windows.UI.Xaml.Controls;
 
 namespace ScreenCapture {
     public static class Extensions {
-        public static IAsyncOperation<ContentDialogResult> ShowWithAnimationAsync(this ContentDialog contentDialog) { // thanks kimbra
-            if(contentDialog.Style == null) {
-                contentDialog.Style = (Style)Application.Current.Resources["DefaultContentDialogStyle"];
+        public static IAsyncOperation<ContentDialogResult> ShowWithAnimationAsync(this object contentDialog) { // thanks kimbra
+            var dialog = contentDialog as ContentDialog;
+            if(dialog.Style == null) {
+                dialog.Style = (Style)Application.Current.Resources["DefaultContentDialogStyle"];
             }
-            return contentDialog.ShowAsync();
+            return dialog.ShowAsync();
         }
     }
 }

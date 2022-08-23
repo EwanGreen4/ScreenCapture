@@ -97,6 +97,9 @@
     <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\AudioQualityDialog.xbf">
+      <PackagePath>AudioQualityDialog.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\GalleryPage.xbf">
       <PackagePath>GalleryPage.xbf</PackagePath>
     </AppxPackagedFile>
