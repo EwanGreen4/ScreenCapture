@@ -14,9 +14,9 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Resources" />
       <RootProperty Name="ChildrenTransitions" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Background" />
       <RootProperty Name="BorderBrush" />
@@ -185,6 +185,7 @@
       <RootProperty Name="AllowFocusOnInteraction" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="ScreenCapture.ExpanderSettingsCard">
@@ -195,8 +196,9 @@
     <RootType FullName="ScreenCapture.CollapsibleChildStackPanel">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Orientation" />
-      <RootProperty Name="Spacing" />
+      <RootProperty Name="Space" />
       <RootProperty Name="Children" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="VerticalAlignment" />

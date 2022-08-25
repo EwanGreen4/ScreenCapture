@@ -19,7 +19,7 @@
             Grid.Column="0"
             HorizontalAlignment="Left"
             Orientation="Horizontal"
-            Spacing="16">
+            Space="16">
             <FontIcon
                 VerticalAlignment="Center"
                 FontFamily="Segoe Fluent Icons "
