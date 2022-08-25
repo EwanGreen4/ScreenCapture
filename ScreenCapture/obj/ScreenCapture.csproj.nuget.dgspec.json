@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ewan\\source\\repos\\screencapture\\ScreenCapture\\ScreenCapture.csproj": {}
+    "C:\\Users\\lezlo\\source\\repos\\ScreenCapture\\ScreenCapture\\ScreenCapture.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ewan\\source\\repos\\screencapture\\ScreenCapture\\ScreenCapture.csproj": {
+    "C:\\Users\\lezlo\\source\\repos\\ScreenCapture\\ScreenCapture\\ScreenCapture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ewan\\source\\repos\\screencapture\\ScreenCapture\\ScreenCapture.csproj",
+        "projectUniqueName": "C:\\Users\\lezlo\\source\\repos\\ScreenCapture\\ScreenCapture\\ScreenCapture.csproj",
         "projectName": "ScreenCapture",
-        "projectPath": "C:\\Users\\ewan\\source\\repos\\screencapture\\ScreenCapture\\ScreenCapture.csproj",
-        "packagesPath": "C:\\Users\\ewan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ewan\\source\\repos\\screencapture\\ScreenCapture\\obj\\",
+        "projectPath": "C:\\Users\\lezlo\\source\\repos\\ScreenCapture\\ScreenCapture\\ScreenCapture.csproj",
+        "packagesPath": "C:\\Users\\lezlo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lezlo\\source\\repos\\ScreenCapture\\ScreenCapture\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\ewan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lezlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

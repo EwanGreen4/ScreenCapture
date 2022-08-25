@@ -125,6 +125,7 @@
     </Compile>
     <Compile Include="CaptureHelper.cs" />
     <Compile Include="CaptureRegionUI.cs" />
+    <Compile Include="CollapsibleChildStackPanel.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="GalleryPage.xaml.cs">
       <DependentUpon>GalleryPage.xaml</DependentUpon>

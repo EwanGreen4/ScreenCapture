@@ -208,3 +208,9 @@ C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\AudioQualit
 C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.g.cs
 C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.xaml
 C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.xbf
+C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\AudioQualityDialog.xbf
+C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.g.i.cs
+C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.g.cs
+C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.xaml
+C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\obj\x64\Debug\AudioQualityDialog.xbf
+C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637425031200000000.json

@@ -192,6 +192,12 @@
       <RootProperty Name="ExpanderInnards" />
     </RootType>
     <RootType FullName="ScreenCapture.RangedNumberBox" />
+    <RootType FullName="ScreenCapture.CollapsibleChildStackPanel">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Spacing" />
+      <RootProperty Name="Children" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Content" />
