@@ -31,22 +31,17 @@ namespace ScreenCapture {
             => this.SetSpacingForChildren(this.Space);
 
         private void SetSpacingForChildren(int spacing) {
-            for(int i = 0; i < this.Children.Count; i++) {
-                if(this.Children[i] is FrameworkElement element
-                    && element.Visibility == Visibility.Visible) {
+            FrameworkElement last = null;
+            foreach(var it in this.Children) {
+                if(it is FrameworkElement element) {
 
-                    FrameworkElement lastElement = i > 0 ? this.Children[i - 1] as FrameworkElement : null;
+                    if(it.ActualSize.X > 0 && it.Visibility == Visibility.Visible) {
+                        
+                    } else {
 
+                    }
 
-                    FrameworkElement nextElement = i < this.Children.Count ? this.Children[i + 1] as FrameworkElement: null;
-
-                    var halfSpacing = spacing / 2;
-                    var smallSpacing = (nextElement != null && nextElement.Visibility == Visibility.Visible ? spacing / 2 : 0);
-                    var bigSpacing = (lastElement != null && lastElement.Visibility == Visibility.Visible ? 0 : halfSpacing);
-
-                    bool vertical = this.Orientation == Orientation.Vertical;
-                    
-                    element.Margin = new Thickness(element.Margin.Left + (vertical ? 0 : bigSpacing), element.Margin.Top + (vertical ? bigSpacing : 0), element.Margin.Right + (vertical ? 0 : smallSpacing), element.Margin.Bottom + (vertical ? smallSpacing : 0));
+                    last = element;
                 }
             }
         }
