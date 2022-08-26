@@ -185,7 +185,6 @@
       <RootProperty Name="AllowFocusOnInteraction" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Visibility" />
       <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="ScreenCapture.ExpanderSettingsCard">
