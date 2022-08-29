@@ -16,18 +16,18 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Media;
 
 namespace ScreenCapture {
+
     public class CollapsibleChildStackPanel : StackPanel {
 
         public static readonly DependencyProperty SpaceProperty =
             DependencyProperty.Register(nameof(Space), typeof(int), typeof(CollapsibleChildStackPanel), new PropertyMetadata(0));
-
-        public CollapsibleChildStackPanel() {
-            this.Loaded += this.CollapsibleChildStackPanel_Loaded;
-        }
-
         public int Space {
             get => (int)this.GetValue(SpaceProperty);
             set => this.SetValue(SpaceProperty, value);
+        }
+
+        public CollapsibleChildStackPanel() {
+            this.Loaded += this.CollapsibleChildStackPanel_Loaded;
         }
 
         private void CollapsibleChildStackPanel_Loaded(object sender, object e)
@@ -70,8 +70,14 @@ namespace ScreenCapture {
 
                     bool vertical = this.Orientation != Orientation.Vertical;
                     if(it.ActualSize.X > 0 && it.ActualSize.Y > 0 && it.Visibility == Visibility.Visible) {
-                        var baseSpacing = (this.Children.IndexOf(it) > 0 && this.Children[Math.Max(this.Children.IndexOf(it) - 1, 0)].Visibility == Visibility.Visible) ? mainSpacing : 0;
-                        var footSpacing = (this.Children.IndexOf(it) < this.Children.Count - 1  && this.Children[Math.Min(this.Children.IndexOf(it) + 1, this.Children.Count - 1)].Visibility == Visibility.Visible) ? mainSpacing : 0;
+                        var isActuallyVisible = (UIElement e) => {
+                            return e.Visibility == Visibility.Visible && e.ActualSize.X > 0 && e.ActualSize.Y > 0;
+                        };
+
+                        int index = this.Children.IndexOf(it);
+
+                        var baseSpacing = index > 0 && isActuallyVisible(this.Children[index - 1]) ? mainSpacing : 0;
+                        var footSpacing = index < this.Children.Count - 1 && isActuallyVisible(this.Children[index + 1]) ? mainSpacing : 0;
 
                         l += vertical ? baseSpacing : 0;
                         t += vertical ? 0 : baseSpacing;

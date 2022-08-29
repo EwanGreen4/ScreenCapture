@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-3UPB89G</Machine>
+    <Machine>EWAN11</Machine>
     <WindowsUser>lezlo</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>fe6d9b64-5852-4e58-965e-ae8b4272e76c</PackageIdentityName>
     <PackageIdentityPublisher>CN=lezlo</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\ewan\source\repos\screencapture\ScreenCapture\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>BAFE5750BB05EDC19F5568AF4B2A1AAF66E0279B9581720514E26F948B718586</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>07230E244D48F02BFA54DDF707DF923ED99DB6F7B273931862ADC29FBBBDFFE1</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>fe6d9b64-5852-4e58-965e-ae8b4272e76c_1.0.0.0_x64__y6a94ykj2wvm4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>fe6d9b64-5852-4e58-965e-ae8b4272e76c_y6a94ykj2wvm4!App</RegisteredUserModeAppID>
     <RegisteredPackageID>fe6d9b64-5852-4e58-965e-ae8b4272e76c</RegisteredPackageID>
@@ -27,269 +27,269 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-08-26T21:33:02.033</Modified>
+      <Modified>2022-08-29T07:02:31.060</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\ScreenCapture.exe">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.exe">
       <PackagePath>entrypoint\ScreenCapture.exe</PackagePath>
-      <Modified>2022-08-26T21:33:01.252</Modified>
+      <Modified>2022-08-29T07:02:29.530</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\.nuget\packages\microsoft.web.webview2\1.0.1264.42\build\..\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\microsoft.web.webview2\1.0.1264.42\build\..\runtimes\win-x64\native_uap\Microsoft.Web.WebView2.Core.dll">
       <PackagePath>Microsoft.Web.WebView2.Core.dll</PackagePath>
       <Modified>2022-06-28T22:02:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\microsoft.bcl.asyncinterfaces\6.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll">
       <PackagePath>Microsoft.Bcl.AsyncInterfaces.dll</PackagePath>
       <Modified>2021-10-22T23:42:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\.nuget\packages\microsoft.web.webview2\1.0.1264.42\runtimes\win-x64\native\WebView2Loader.dll">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\microsoft.web.webview2\1.0.1264.42\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>WebView2Loader.dll</PackagePath>
       <Modified>2022-06-28T22:02:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.14\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2022-06-11T05:23:28.000</Modified>
+      <Modified>2022-06-10T22:23:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\.nuget\packages\system.runtime.compilerservices.unsafe\6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\system.runtime.compilerservices.unsafe\6.0.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
       <Modified>2021-10-22T23:40:46.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\.nuget\packages\system.text.encodings.web\6.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\system.text.encodings.web\6.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll">
       <PackagePath>System.Text.Encodings.Web.dll</PackagePath>
       <Modified>2021-10-22T23:42:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\.nuget\packages\system.text.json\6.0.5\lib\netstandard2.0\System.Text.Json.dll">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\system.text.json\6.0.5\lib\netstandard2.0\System.Text.Json.dll">
       <PackagePath>System.Text.Json.dll</PackagePath>
       <Modified>2022-05-17T17:25:08.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\.nuget\packages\win2d.uwp\1.26.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\win2d.uwp\1.26.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2021-04-28T19:55:42.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\.nuget\packages\win2d.uwp\1.26.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\win2d.uwp\1.26.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2021-04-28T19:54:02.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2020-12-02T11:52:00.000</Modified>
+      <Modified>2020-12-02T10:52:00.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\.nuget\packages\microsoft.web.webview2\1.0.1264.42\lib\Microsoft.Web.WebView2.Core.winmd">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\microsoft.web.webview2\1.0.1264.42\lib\Microsoft.Web.WebView2.Core.winmd">
       <PackagePath>Microsoft.Web.WebView2.Core.winmd</PackagePath>
       <Modified>2022-06-28T22:02:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2022-08-22T20:16:28.966</Modified>
+      <Modified>2022-07-07T04:46:02.577</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2022-08-22T20:16:28.961</Modified>
+      <Modified>2022-06-20T19:53:09.365</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-08-22T20:16:28.961</Modified>
+      <Modified>2022-06-20T19:53:09.367</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-08-22T20:16:28.962</Modified>
+      <Modified>2022-06-20T19:53:09.367</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-08-22T20:16:28.962</Modified>
+      <Modified>2022-06-20T19:53:09.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-08-22T20:16:28.962</Modified>
+      <Modified>2022-06-20T19:53:09.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-08-22T20:16:28.963</Modified>
+      <Modified>2022-06-20T19:53:09.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-08-22T20:16:28.963</Modified>
+      <Modified>2022-06-20T19:53:09.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\ScreenCapture.xr.xml">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ScreenCapture.xr.xml">
       <PackagePath>ScreenCapture.xr.xml</PackagePath>
-      <Modified>2022-08-26T20:44:48.198</Modified>
+      <Modified>2022-08-27T03:39:11.091</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.143</Modified>
+      <Modified>2022-08-29T07:02:29.365</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\AudioQualityDialog.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\AudioQualityDialog.xbf">
       <PackagePath>AudioQualityDialog.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.143</Modified>
+      <Modified>2022-08-29T07:02:29.366</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\GalleryPage.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\GalleryPage.xbf">
       <PackagePath>GalleryPage.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.143</Modified>
+      <Modified>2022-08-29T07:02:29.366</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.144</Modified>
+      <Modified>2022-08-29T07:02:29.366</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\ExpanderSettingsCard.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\ExpanderSettingsCard.xbf">
       <PackagePath>ExpanderSettingsCard.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.144</Modified>
+      <Modified>2022-08-29T07:02:29.366</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\RangedNumberBox.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\RangedNumberBox.xbf">
       <PackagePath>RangedNumberBox.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.144</Modified>
+      <Modified>2022-08-29T07:02:29.366</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\SettingsCardInnards.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\SettingsCardInnards.xbf">
       <PackagePath>SettingsCardInnards.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.144</Modified>
+      <Modified>2022-08-29T07:02:29.366</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\SettingsPage.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\SettingsPage.xbf">
       <PackagePath>SettingsPage.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.141</Modified>
+      <Modified>2022-08-29T07:02:29.363</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\StaticSettingsCard.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\StaticSettingsCard.xbf">
       <PackagePath>StaticSettingsCard.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.144</Modified>
+      <Modified>2022-08-29T07:02:29.366</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\Themes\Generic.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Themes\Generic.xbf">
       <PackagePath>Themes\Generic.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.143</Modified>
+      <Modified>2022-08-29T07:02:29.365</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\VideoThumbnailCard.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\VideoThumbnailCard.xbf">
       <PackagePath>VideoThumbnailCard.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.144</Modified>
+      <Modified>2022-08-29T07:02:29.367</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\WarningCard.xbf">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\WarningCard.xbf">
       <PackagePath>WarningCard.xbf</PackagePath>
-      <Modified>2022-08-26T21:33:01.145</Modified>
+      <Modified>2022-08-29T07:02:29.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
-      <Modified>2020-12-02T12:31:00.000</Modified>
+      <Modified>2020-12-02T11:31:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2020-12-02T09:52:06.000</Modified>
+      <Modified>2020-12-02T08:52:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
+    <AppxPackagedFile Include="C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2022-08-12T19:49:48.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-08-25T19:50:17.146</Modified>
+      <Modified>2022-08-27T21:26:11.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ewan\source\repos\screencapture\ScreenCapture\bin\x64\Debug\Core\ScreenCapture.exe">
+    <AppxPackagedFile Include="C:\Users\lezlo\source\repos\ScreenCapture\ScreenCapture\bin\x64\Debug\Core\ScreenCapture.exe">
       <PackagePath>ScreenCapture.exe</PackagePath>
-      <Modified>2022-08-26T21:33:02.029</Modified>
+      <Modified>2022-08-29T07:02:31.050</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.8.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.8.appx">
       <Name>Microsoft.UI.Xaml.2.8</Name>
       <Version>8.2208.12001.0</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.8, MinVersion = 8.2208.12001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.8.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.8.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.8.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.8.appx">
       <Name>Microsoft.UI.Xaml.2.8</Name>
       <Version>8.2208.12001.0</Version>
       <Architecture>Win32</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.8, MinVersion = 8.2208.12001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.8.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.8.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.8.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.8.appx">
       <Name>Microsoft.UI.Xaml.2.8</Name>
       <Version>8.2208.12001.0</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.8, MinVersion = 8.2208.12001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.8.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.8.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.8.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.8.appx">
       <Name>Microsoft.UI.Xaml.2.8</Name>
       <Version>8.2208.12001.0</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.8, MinVersion = 8.2208.12001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.8.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.8.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.8.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.8.appx">
       <Name>Microsoft.UI.Xaml.2.8</Name>
       <Version>8.2208.12001.0</Version>
       <Architecture>arm64</Architecture>
       <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.8, MinVersion = 8.2208.12001.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\ewan\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.8.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\microsoft.ui.xaml\2.8.1\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.8.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.31331.1</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.31331.1</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
       <Version>2.2.31331.1</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.31331.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.31327.1</Version>
       <Architecture>x86</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.31327.1</Version>
       <Architecture>x64</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Users\lezlo\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
       <Version>2.2.31327.1</Version>
       <Architecture>arm</Architecture>
       <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.31327.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <AppxLocation>C:\Users\lezlo\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.14\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
