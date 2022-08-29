@@ -149,6 +149,7 @@
     <Compile Include="StaticSettingsCard.xaml.cs">
       <DependentUpon>StaticSettingsCard.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UnitTextBox.cs" />
     <Compile Include="VideoThumbnailCard.xaml.cs">
       <DependentUpon>VideoThumbnailCard.xaml</DependentUpon>
     </Compile>

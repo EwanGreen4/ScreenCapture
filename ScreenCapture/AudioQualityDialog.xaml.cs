@@ -20,5 +20,9 @@ namespace ScreenCapture {
         public AudioQualityDialog() {
             this.InitializeComponent();
         }
+
+        private void SettingsCardInnards_Loaded(object sender, RoutedEventArgs e) {
+
+        }
     }
 }

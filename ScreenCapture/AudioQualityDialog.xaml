@@ -17,12 +17,17 @@
                 </StackPanel>
             </local:SettingsCardInnards.RightControl>
         </local:SettingsCardInnards>
-        <local:SettingsCardInnards Title="Bitrate" Subtitle="Data stored per second">
+        <local:SettingsCardInnards Title="Bitrate" Subtitle="Data stored per second" Loaded="SettingsCardInnards_Loaded">
             <local:SettingsCardInnards.RightControl>
                 <StackPanel Orientation="Horizontal" Spacing="3">
-                    <CheckBox HorizontalAlignment="Right" HorizontalContentAlignment="Left" VerticalAlignment="Stretch" VerticalContentAlignment="Center">VBR</CheckBox>
                     <TextBox x:Name="BitrateInput"/>
                     <TextBlock VerticalAlignment="Center" Width="40">Kbps</TextBlock>
+                </StackPanel>
+            </local:SettingsCardInnards.RightControl>
+        </local:SettingsCardInnards>
+        <local:SettingsCardInnards Title="Variable Bitrate" Subtitle="Allow variable bitrate encoding (VBR)" Loaded="SettingsCardInnards_Loaded">
+            <local:SettingsCardInnards.RightControl>
+                <StackPanel Orientation="Horizontal" Spacing="3">
                 </StackPanel>
             </local:SettingsCardInnards.RightControl>
         </local:SettingsCardInnards>
